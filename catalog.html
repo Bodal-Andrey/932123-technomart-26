@@ -59,10 +59,11 @@
     <section class="filters">
     <h3>Фильтр:</h3>
     <form class="filter" action="#" method="get">
-      <div class="filter-range">
-        <h4>Цена</h4>
-        <input type="range" name="price" min="0" max="30000">
-      </div>
+      <fieldset>
+        <legend>Цена:</legend>
+        <input type="text" name="range">
+        <input type="text" name="price">
+      </fieldset>
       <fieldset>
         <legend>Производители:</legend>
         <ul>
@@ -168,6 +169,10 @@
           <b>12500 Р.</b>
         </li>
       </ul>
+      <div class="choice">
+        <a href="">Купить</a>
+        <a href="">В закладки</a>
+      </div>
   </section>
     <div class="pagination">
       <ul>
