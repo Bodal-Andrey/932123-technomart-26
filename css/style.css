@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #f4f7f9;
+}
+
+.header-top {
+  background-color: #293449;
+}
+
+.header-top a,
+.header-top label {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.header-top input {
+  background-color: #293449;
+  border: none;
+}
+
+.header-top a:hover,
+.header-top input:hover,
+.header-top label:hover {
+  background-color: #212a3a;
+}
+
+.header-top a[class="order"]:hover {
+  background-color: #5fbb2d;
+}
+
+.header-top a:active {
+  color: rgba(255, 255, 255, 0.5);
+
+  background-color: #161d29;
+}
+
+.header-top a[class="order"]:active {
+  background-color: #518534;
+}
+
+.header-top input:focus,
+.header-top label:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.logo a{
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+.logo a:hover {
+  background-color: #ca2c37;
+}
+
+.logo a:active {
+  background-color: #ba2732;
+}
+
+.header-top .order {
+  background-color: #63a63e;
+}
+
+.technomart-definition {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.address a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+
+  border: solid 3px #ffffff;
+}
+
+.address p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+a.enter {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  text-align: left;
+
+  background-color: #ffffff;
+}
+
+a.registration {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  text-align: left;
+
+  background-color: #ffffff;
+}
+
+a.enter:hover,
+a.registration:hover {
+  color: #ee3643;
+}
+
+a.enter:active,
+a.registration:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-bottom {
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+}
+
+.header-bottom ul {
+  list-style: none;
+}
+
+.header-bottom a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.header-bottom a:hover {
+  background-color: #1d2739;
+}
+
+.header-bottom a:active {
+  color: rgba(255, 255, 255, 0.5);
+
+  background-color: #1d2739;
+}
+
+.about-company h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.about-company p {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.about-company ul {
+  list-style: none;
+}
+
+.about-company li {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.about-company a {
+  font-size: 14px;
+  line-height:18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.contacts p {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.write-to-us {
+  font-size: 14px;
+  line-height:18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.footer-top,
+.footer-navigation {
+  background-color: #32425c;
+}
+
+.logo-back a{
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+.footer-top p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer-navigation ul {
+  list-style: none;
+}
+
+.footer-navigation-top a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer-navigation-bottom a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+}
+
+.footer-navigation-top a:hover,
+.footer-navigation-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation-top a:active {
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.footer-navigation-bottom a:active {
+  color: rgba(255, 209, 128, 0.5);
+}
+
+.footer-bottom {
+  background-color: #293449;
+}
+
+.footer-bottom p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-bottom ul {
+  list-style: none;
+}
+
+.footer-bottom p a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffd180;
+}
+
+.footer-bottom p a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom p a:active {
+  color: #ee3643;
+}
+
+.form-back,
+.map {
+  display: none;
+}
