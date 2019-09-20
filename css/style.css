@@ -160,7 +160,7 @@ a.registration:active {
 }
 
 .about-company p {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -200,6 +200,28 @@ a.registration:active {
 .write-to-us {
   font-size: 14px;
   line-height:18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.form-back label {
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.form-back input,
+.form-back textarea {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.form-back button[type="submit"] {
+  font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
 
   background-color: #ee3643;
@@ -278,7 +300,173 @@ a.registration:active {
   color: #ee3643;
 }
 
+
+.personal ul,
+.breadcrumbs,
+.product-selection ul,
+.sort ul,
+.catalog-hammer-drill ul,
+.pagination ul {
+  list-style: none;
+}
+
+.personal .name {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.personal .name:active {
+  font-size: 21px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #f1f5f7;
+}
+.personal .name {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.personal .my-orders,
+.personal .personal-account {
+  font-size: 16px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.personal .my-orders:hover,
+.personal .personal-account:hover {
+  font-size: 16px;
+  color: #ee3643;
+  text-decoration: underline;
+}
+
+.personal .my-orders:active,
+.personal .personal-account:active {
+  font-size: 16px;
+  color: rgba(50, 66, 92, 0.3);
+  text-decoration: underline;
+}
+
+.breadcrumbs a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.hummer-drills {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+
+  background-color: #f2f6f8;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.filter input[type="checkbox"],
+.filter input[type="radio"] {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.filter-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.catalog-hammer-drill h3 a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.old-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.choice a:nth-child(1) {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #63a63e;
+}
+
+.choice a:nth-child(2) {
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+
+  background-color: #ffffff;
+  border: solid 3px #63a63e;
+}
+
+.modal-back h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.modal-back .make-order {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.modal-back .white-button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
 .form-back,
-.map {
+.map,
+.choice,
+.modal-back {
   display: none;
 }
