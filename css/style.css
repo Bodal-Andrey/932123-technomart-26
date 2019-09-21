@@ -180,6 +180,7 @@ a.registration:active {
   font-size: 14px;
   line-height:18px;
   color: #ffffff;
+  text-transform: uppercase;
 
   background-color: #ee3643;
 }
@@ -201,8 +202,19 @@ a.registration:active {
   font-size: 14px;
   line-height:18px;
   color: #ffffff;
+  text-transform: uppercase;
 
   background-color: #ee3643;
+}
+
+.about-company a:hover,
+.write-to-us:hover {
+  background-color: #ca2c37;
+}
+
+.about-company a:active,
+.write-to-us:active {
+  background-color: #ba2732;
 }
 
 .form-back label {
