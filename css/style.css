@@ -153,6 +153,237 @@ a.registration:active {
   background-color: #1d2739;
 }
 
+.assortment ul,
+.popular-goods ul,
+.popular-manufacturers ul,
+.services ul {
+  list-style: none;
+}
+
+.assortment .materials h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #f6b22d;
+}
+
+.assortment .instrument h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #3bbce3;
+}
+
+.assortment .technics h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #dc91d8;
+}
+
+.assortment .discount h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #8ed78f;
+}
+
+.assortment .delivery h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #ffc047;
+}
+
+.assortment .drills h3 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #000000;
+}
+
+.assortment .drills span {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.assortment .materials a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ffbf47;
+  opacity: 0.1;
+}
+
+.assortment .instrument a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #3bbce3;
+  opacity: 0.1;
+}
+
+.assortment .technics a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #9c91d8;
+  opacity: 0.1;
+}
+
+.assortment .discount a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #8ed78f;
+  opacity: 0.1;
+}
+
+.assortment .delivery a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ffc047;
+  opacity: 0.1;
+}
+
+.assortment .drills a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.assortment .materials a:hover,
+.assortment .instrument a:hover,
+.assortment .technics a:hover,
+.assortment .discount a:hover,
+.assortment .delivery a:hover {
+  opacity: 0.2;
+}
+
+.assortment .materials a:active,
+.assortment .instrument a:active,
+.assortment .technics a:active,
+.assortment .discount a:active,
+.assortment .delivery a:active {
+  opacity: 0.3;
+}
+
+.assortment .drills a:hover {
+  background-color: #ca2c37;
+}
+
+.assortment .drills a:active {
+  background-color: #ba2732;
+}
+
+.popular-goods h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+a.all-popular-goods {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+a.all-popular-goods:hover {
+  background-color: #ca2c37;
+}
+
+a.all-popular-goods:active {
+  background-color: #ba2732;
+}
+
+.popular-manufacturers h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+a.all-manufacturers {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+a.all-manufacturers:hover {
+  background-color: #ca2c37;
+}
+
+a.all-manufacturers:active {
+  background-color: #ba2732;
+}
+
+.services h2,
+.services h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #f4f7f9;
+}
+
+.services p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f4f7f9;
+}
+
+.service-delivery,
+.service-garanty,
+.service-credit {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.service-delivery:hover,
+.service-garanty:hover,
+.service-credit:hover {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.service-delivery:active,
+.service-garanty:active,
+.service-credit:active {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #32425c;
+  background-color: #ffffff;
+}
+
 .about-company h2 {
   font-size: 30px;
   line-height: 30px;
@@ -373,12 +604,114 @@ a.registration:active {
   color: #000000;
 }
 
-.hummer-drills {
+.hammer-drills {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
 
   background-color: #f2f6f8;
+}
+
+.sort {
+  background-color: #f7f3ec;
+}
+
+.filters h3,
+.sort h3 {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #f7f3ec;
+}
+
+.sort a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #ee3643;
+}
+
+.sort a:hover {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #ee3643;
+}
+
+.sort a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #ee3643;
+}
+.sort a:active {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.pagination a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 1px #e5e5e5;
+}
+
+.pagination a:hover {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 1px #bdc6ca;
+}
+
+.pagination a:active {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 1px #ee3643;
+}
+
+
+.pagination .current {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.about-hammer-drill {
+  background-color: #f4f7f9;
+}
+
+.about-hammer-drill h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.about-hammer-drill p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .filter fieldset {
@@ -410,7 +743,8 @@ a.registration:active {
   background-color: #ffffff;
 }
 
-.catalog-hammer-drill h3 a {
+.catalog-hammer-drill h3 a,
+.popular-goods h3 a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
