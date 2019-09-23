@@ -205,14 +205,12 @@ a.registration:active {
   line-height: 36px;
   color: #ffffff;
   font-weight: 700;
-  background-color: #000000;
 }
 
 .assortment .drills span {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  background-color: #000000;
 }
 
 .assortment .materials a {
@@ -220,7 +218,7 @@ a.registration:active {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #ffbf47;
+  background-color: #e5ac40;
   opacity: 0.1;
 }
 
@@ -229,7 +227,7 @@ a.registration:active {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #3bbce3;
+  background-color: #35a9cc;
   opacity: 0.1;
 }
 
@@ -238,7 +236,7 @@ a.registration:active {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #9c91d8;
+  background-color: #c682c2;
   opacity: 0.1;
 }
 
@@ -247,7 +245,7 @@ a.registration:active {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #8ed78f;
+  background-color: #80c180;
   opacity: 0.1;
 }
 
@@ -256,7 +254,7 @@ a.registration:active {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #ffc047;
+  background-color: #e5ac40;
   opacity: 0.1;
 }
 
@@ -297,6 +295,7 @@ a.registration:active {
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+  background-color: #f9f5f0;
 }
 
 a.all-popular-goods {
@@ -320,6 +319,7 @@ a.all-popular-goods:active {
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+  background-color: #f9f5f0;
 }
 
 a.all-manufacturers {
@@ -343,6 +343,7 @@ a.all-manufacturers:active {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
   background-color: #f4f7f9;
 }
 
@@ -388,6 +389,7 @@ a.all-manufacturers:active {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .about-company p {
@@ -420,6 +422,7 @@ a.all-manufacturers:active {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .contacts p {
@@ -602,13 +605,14 @@ a.all-manufacturers:active {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .hammer-drills {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
-
+  text-transform: uppercase;
   background-color: #f2f6f8;
 }
 
@@ -622,6 +626,7 @@ a.all-manufacturers:active {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
   background-color: #f7f3ec;
 }
 
@@ -630,6 +635,7 @@ a.all-manufacturers:active {
   font-size: 13px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-color: #ee3643;
@@ -666,6 +672,7 @@ a.all-manufacturers:active {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
 }
@@ -675,6 +682,7 @@ a.all-manufacturers:active {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
   background-color: #ffffff;
   border: solid 1px #bdc6ca;
 }
@@ -684,6 +692,7 @@ a.all-manufacturers:active {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
   background-color: #ffffff;
   border: solid 1px #ee3643;
 }
@@ -705,6 +714,7 @@ a.all-manufacturers:active {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .about-hammer-drill p {
@@ -724,6 +734,7 @@ a.all-manufacturers:active {
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .filter input[type="checkbox"],
@@ -732,6 +743,10 @@ a.all-manufacturers:active {
   font-size: 15px;
   line-height: 20px;
   color: #000000;
+}
+
+.filter label {
+  text-transform: uppercase;
 }
 
 .filter-button {
