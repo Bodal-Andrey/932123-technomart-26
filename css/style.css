@@ -160,60 +160,75 @@ a.registration:active {
   list-style: none;
 }
 
-.assortment .materials h3 {
-  font-size: 24px;
-  line-height: 30px;
-  color: #ffffff;
-  font-weight: 700;
+.materials {
   background-color: #f6b22d;
 }
 
-.assortment .instrument h3 {
+.materials h3 {
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
   font-weight: 700;
+}
+
+.instrument {
   background-color: #3bbce3;
 }
 
-.assortment .technics h3 {
+.instrument h3 {
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
   font-weight: 700;
+}
+
+.technics {
   background-color: #dc91d8;
 }
 
-.assortment .discount h3 {
+.technics h3 {
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
   font-weight: 700;
+}
+
+.discount {
   background-color: #8ed78f;
 }
 
-.assortment .delivery h3 {
+.discount h3 {
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
   font-weight: 700;
+}
+
+.delivery {
   background-color: #ffc047;
 }
 
-.assortment .drills h3 {
+.delivery h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.drills h3 {
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
   font-weight: 700;
 }
 
-.assortment .drills span {
+.drills span {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
 }
 
-.assortment .materials a {
+.materials a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -221,15 +236,15 @@ a.registration:active {
   background-color: rgba(229, 172, 64, 0.1);
 }
 
-.assortment .materials a:hover {
+.materials a:hover {
   background-color: rgba(229, 172, 64, 0.2);
 }
 
-.assortment .materials a:active {
+.materials a:active {
   background-color: rgba(229, 172, 64, 0.3);
 }
 
-.assortment .instrument a {
+.instrument a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -237,15 +252,15 @@ a.registration:active {
   background-color: rgba(53, 169, 204, 0.1);
 }
 
-.assortment .instrument a:hover {
+.instrument a:hover {
   background-color: rgba(53, 169, 204, 0.2);
 }
 
-.assortment .instrument a:active {
+.instrument a:active {
   background-color: rgba(53, 169, 204, 0.3);
 }
 
-.assortment .technics a {
+.technics a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -253,15 +268,15 @@ a.registration:active {
   background-color: rgba(198, 130, 194, 0.1);
 }
 
-.assortment .technics a:hover {
+.technics a:hover {
   background-color: rgba(198, 130, 194, 0.2);
 }
 
-.assortment .technics a:active {
+.technics a:active {
   background-color: rgba(198, 130, 194, 0.3);
 }
 
-.assortment .discount a {
+.discount a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -269,15 +284,15 @@ a.registration:active {
   background-color: rgba(128, 193, 128, 0.1);
 }
 
-.assortment .discount a:hover {
+.discount a:hover {
   background-color: rgba(128, 193, 128, 0.2);
 }
 
-.assortment .discount a:active {
+.discount a:active {
   background-color: rgba(128, 193, 128, 0.3);
 }
 
-.assortment .delivery a {
+.delivery a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -285,15 +300,15 @@ a.registration:active {
   background-color: rgba(229, 172, 64, 0.1);
 }
 
-.assortment .discount a:hover {
+.discount a:hover {
   background-color: rgba(229, 172, 64, 0.2);
 }
 
-.assortment .discount a:active {
+.discount a:active {
   background-color: rgba(229, 172, 64, 0.3);
 }
 
-.assortment .drills a {
+.drills a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -301,12 +316,16 @@ a.registration:active {
   background-color: #ee3643;
 }
 
-.assortment .drills a:hover {
+.drills a:hover {
   background-color: #ca2c37;
 }
 
-.assortment .drills a:active {
+.drills a:active {
   background-color: #ba2732;
+}
+
+.popular-goods-subject {
+  background-color: #f9f5f0;
 }
 
 .popular-goods h2 {
@@ -314,7 +333,6 @@ a.registration:active {
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
-  background-color: #f9f5f0;
 }
 
 a.all-popular-goods {
@@ -333,12 +351,15 @@ a.all-popular-goods:active {
   background-color: #ba2732;
 }
 
+.popular-manufacturers-subject {
+  background-color: #f9f5f0;
+}
+
 .popular-manufacturers h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
-  background-color: #f9f5f0;
 }
 
 a.all-manufacturers {
@@ -363,7 +384,6 @@ a.all-manufacturers:active {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-  background-color: #f4f7f9;
 }
 
 .services p {
@@ -371,7 +391,6 @@ a.all-manufacturers:active {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-  background-color: #f4f7f9;
 }
 
 .service-delivery,
@@ -551,17 +570,20 @@ a.all-manufacturers:active {
   list-style: none;
 }
 
-.footer-bottom p a {
+.feedback,
+.developed {
   font-size: 16px;
   line-height: 18px;
   color: #ffd180;
 }
 
-.footer-bottom p a:hover {
+.feedback:hover,
+.developed:hover {
   text-decoration: underline;
 }
 
-.footer-bottom p a:active {
+.feedback:active,
+.developed:active {
   color: #ee3643;
 }
 
@@ -646,7 +668,6 @@ a.all-manufacturers:active {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
-  background-color: #f7f3ec;
 }
 
 .sort a {
@@ -777,8 +798,8 @@ a.all-manufacturers:active {
   background-color: #ffffff;
 }
 
-.catalog-hammer-drill h3 a,
-.popular-goods h3 a {
+.appellation
+ {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
