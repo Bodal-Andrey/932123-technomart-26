@@ -218,8 +218,15 @@ a.registration:active {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #e5ac40;
-  opacity: 0.1;
+  background-color: rgba(229, 172, 64, 0.1);
+}
+
+.assortment .materials a:hover {
+  background-color: rgba(229, 172, 64, 0.2);
+}
+
+.assortment .materials a:active {
+  background-color: rgba(229, 172, 64, 0.3);
 }
 
 .assortment .instrument a {
@@ -227,8 +234,15 @@ a.registration:active {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #35a9cc;
-  opacity: 0.1;
+  background-color: rgba(53, 169, 204, 0.1);
+}
+
+.assortment .instrument a:hover {
+  background-color: rgba(53, 169, 204, 0.2);
+}
+
+.assortment .instrument a:active {
+  background-color: rgba(53, 169, 204, 0.3);
 }
 
 .assortment .technics a {
@@ -236,8 +250,15 @@ a.registration:active {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #c682c2;
-  opacity: 0.1;
+  background-color: rgba(198, 130, 194, 0.1);
+}
+
+.assortment .technics a:hover {
+  background-color: rgba(198, 130, 194, 0.2);
+}
+
+.assortment .technics a:active {
+  background-color: rgba(198, 130, 194, 0.3);
 }
 
 .assortment .discount a {
@@ -245,8 +266,15 @@ a.registration:active {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #80c180;
-  opacity: 0.1;
+  background-color: rgba(128, 193, 128, 0.1);
+}
+
+.assortment .discount a:hover {
+  background-color: rgba(128, 193, 128, 0.2);
+}
+
+.assortment .discount a:active {
+  background-color: rgba(128, 193, 128, 0.3);
 }
 
 .assortment .delivery a {
@@ -254,8 +282,15 @@ a.registration:active {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #e5ac40;
-  opacity: 0.1;
+  background-color: rgba(229, 172, 64, 0.1);
+}
+
+.assortment .discount a:hover {
+  background-color: rgba(229, 172, 64, 0.2);
+}
+
+.assortment .discount a:active {
+  background-color: rgba(229, 172, 64, 0.3);
 }
 
 .assortment .drills a {
@@ -264,22 +299,6 @@ a.registration:active {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
-}
-
-.assortment .materials a:hover,
-.assortment .instrument a:hover,
-.assortment .technics a:hover,
-.assortment .discount a:hover,
-.assortment .delivery a:hover {
-  opacity: 0.2;
-}
-
-.assortment .materials a:active,
-.assortment .instrument a:active,
-.assortment .technics a:active,
-.assortment .discount a:active,
-.assortment .delivery a:active {
-  opacity: 0.3;
 }
 
 .assortment .drills a:hover {
