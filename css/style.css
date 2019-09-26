@@ -650,6 +650,8 @@ a.all-manufacturers:active {
 }
 
 .hammer-drills {
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -869,4 +871,311 @@ a.all-manufacturers:active {
 .choice,
 .modal-back {
   display: none;
+}
+
+/* Стили для сеток */
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+
+  outline: 5px solid green;
+  }
+
+.header-top-wrapper {
+  width: 100%;
+  margin-bottom: 54px;
+
+  min-height: 42px;
+
+  background-color: #293449;
+}
+
+.main-header {
+  min-height: 320px;
+  margin-bottom: 59px;
+
+  outline: 3px solid red;
+}
+
+.header-top {
+  display: flex;
+}
+
+.logo {
+  margin: 0;
+  margin-right: 17px;
+}
+
+.bookmarks,
+.basket,
+.order {
+  display: block;
+
+  width: 150px;
+}
+
+.order-registration {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-left: auto;
+}
+
+.header-middle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.technomart-definition {
+  display: block;
+  width: 196px;
+  padding: 0;
+  margin: 0;
+  margin-left: 53px;
+}
+
+.entrance .enter {
+  margin-right: 10px;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.personal ul:first-child {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  width: 299px;
+  min-height: 45px;
+  margin: 0;
+  margin-bottom: 10px;
+
+  outline: 3px solid red;
+}
+
+.personal ul:last-child {
+  display: flex;
+
+  margin: 0;
+
+  outline: 3px solid red;
+}
+
+.personal .my-orders {
+  margin: 0;
+  margin-left: 15px;
+  margin-right: 32px;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: space-around;
+
+  width: 380px;
+  min-height: 50px;
+
+  outline: 3px solid red;
+}
+
+
+.filters {
+  margin: 0;
+
+  width: 220px;
+  min-height: 740px;
+
+  outline: 3px solid red;
+}
+
+.sort,
+.sort ul {
+  display: flex;
+  justify-content: space-between;
+
+  outline: 3px solid red;
+}
+
+.sort ul {
+  width: 480px;
+}
+
+.sort {
+  margin: 0;
+  width: 700px;
+  min-height: 24px;
+}
+
+.catalog-hammer-drill {
+  width: 700px;
+  min-height: 1000px;
+  margin: 0;
+
+  outline: 3px solid red;
+}
+
+.product-selection {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.hammer-drill-item {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 220px;
+  min-height: 318px;
+
+  outline: 3px solid yellow;
+}
+
+.hammer-drill-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog-hammer-drill ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination {
+  margin: 0;
+  margin-top: 52px;
+  padding: 0;
+  min-height: 38px;
+  outline: 3px solid red;
+}
+
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 86px;
+}
+
+.contacts {
+  width: 300px;
+  outline: 3px solid red;
+}
+
+.about-company {
+  width: 519px;
+  outline: 3px solid red;
+}
+
+.footer-top-wrapper {
+  width: 100%;
+  min-height: 193px;
+
+  background-color: #32425c;
+}
+
+.footer-bottom-wrapper {
+  width: 100%;
+  min-height: 107px;
+
+  background-color: #293449;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top {
+  display: flex;
+  min-height: 193px;
+}
+
+.footer-top-left {
+  width: 322px;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 550px;
+  margin-left: auto;
+  outline: 3px solid yellow;
+}
+
+.footer-navigation-top {
+  width: 550px;
+}
+
+.footer-navigation-bottom {
+  width: 525px;
+}
+
+.footer-navigation-top,
+.footer-navigation-bottom {
+  display: flex;
+  justify-content: space-between;
+  outline: 3px solid red;
+}
+
+.logo-back {
+  margin-bottom: 57px;
+}
+
+.footer-bottom p {
+  display: block;
+  outline: 3px solid red;
+  margin: auto;
+}
+
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1px;
+}
+
+.social-networks {
+  display: flex;
+  width: 135px;
+  margin-right: 119px;
+}
+
+.footer-bottom p:first-child {
+  margin-left: 0;
+  margin-right: 169px;
+  width: 228px;
+}
+
+.footer-bottom p:last-child {
+  margin-right: 15px;
+  width: 96px;
+}
+
+.footer-bottom p:nth-child(2) {
+  width: 135px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
