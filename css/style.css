@@ -748,7 +748,12 @@ a.all-manufacturers:active {
 }
 
 .about-hammer-drill {
+  width: 938px;
+  min-height: 120px;
+  margin: 70px auto;
   background-color: #f4f7f9;
+
+  outline: 3px solid red;
 }
 
 .about-hammer-drill h2 {
@@ -997,7 +1002,7 @@ a.all-manufacturers:active {
 .sort,
 .sort ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   outline: 3px solid red;
 }
@@ -1008,6 +1013,7 @@ a.all-manufacturers:active {
 
 .sort {
   margin: 0;
+  margin-bottom: 21px;
   width: 700px;
   min-height: 24px;
 }
@@ -1071,6 +1077,14 @@ a.all-manufacturers:active {
   outline: 3px solid red;
 }
 
+.about-hammer-drill-wrapper {
+  width: 100%;
+  min-height: 260px;
+  padding-top: 1px;
+
+  background-color: #f4f7f9;
+}
+
 .footer-top-wrapper {
   width: 100%;
   min-height: 193px;
@@ -1089,6 +1103,8 @@ a.all-manufacturers:active {
 footer {
   display: flex;
   flex-direction: column;
+
+  margin: 0;
 }
 
 .footer-top {
