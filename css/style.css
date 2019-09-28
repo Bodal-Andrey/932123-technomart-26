@@ -748,12 +748,7 @@ a.all-manufacturers:active {
 }
 
 .about-hammer-drill {
-  width: 938px;
   min-height: 120px;
-  margin: 70px auto;
-  background-color: #f4f7f9;
-
-  outline: 3px solid red;
 }
 
 .about-hammer-drill h2 {
@@ -1080,7 +1075,7 @@ a.all-manufacturers:active {
 .about-hammer-drill-wrapper {
   width: 100%;
   min-height: 260px;
-  padding-top: 1px;
+  padding-top: 70px;
 
   background-color: #f4f7f9;
 }
