@@ -161,6 +161,9 @@ a.registration:active {
 }
 
 .materials {
+  width: 300px;
+  height: 123px;
+
   background-color: #f6b22d;
 }
 
@@ -172,6 +175,9 @@ a.registration:active {
 }
 
 .instrument {
+  width: 300px;
+  height: 123px;
+
   background-color: #3bbce3;
 }
 
@@ -183,6 +189,9 @@ a.registration:active {
 }
 
 .technics {
+  width: 300px;
+  height: 123px;
+
   background-color: #dc91d8;
 }
 
@@ -194,6 +203,9 @@ a.registration:active {
 }
 
 .discount {
+  width: 300px;
+  height: 123px;
+
   background-color: #8ed78f;
 }
 
@@ -205,6 +217,9 @@ a.registration:active {
 }
 
 .delivery {
+  width: 300px;
+  height: 123px;
+
   background-color: #ffc047;
 }
 
@@ -213,6 +228,13 @@ a.registration:active {
   line-height: 30px;
   color: #ffffff;
   font-weight: 700;
+}
+
+.drills {
+  width: 620px;
+  height: 266px;
+
+  background-image: url("../img/slider-image.jpg");
 }
 
 .drills h3 {
@@ -325,10 +347,14 @@ a.registration:active {
 }
 
 .popular-goods-subject {
+  min-height: 89px;
+
   background-color: #f9f5f0;
 }
 
 .popular-goods h2 {
+  margin: 30px;
+
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -336,6 +362,10 @@ a.registration:active {
 }
 
 a.all-popular-goods {
+  margin: 25px;
+  width: 253px;
+  height: 38px;
+
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -363,6 +393,10 @@ a.all-popular-goods:active {
 }
 
 a.all-manufacturers {
+  margin: 25px;
+  width: 253px;
+  height: 38px;
+
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -715,7 +749,7 @@ a.all-manufacturers:active {
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
-  border: solid 1px #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 
 .pagination a:hover {
@@ -725,7 +759,7 @@ a.all-manufacturers:active {
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
-  border: solid 1px #bdc6ca;
+  border: 1px solid #bdc6ca;
 }
 
 .pagination a:active {
@@ -735,7 +769,7 @@ a.all-manufacturers:active {
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
-  border: solid 1px #ee3643;
+  border: 1px solid #ee3643;
 }
 
 
@@ -766,6 +800,7 @@ a.all-manufacturers:active {
 }
 
 .filter fieldset {
+  padding-left: 0;
   border: none;
 }
 
@@ -885,7 +920,7 @@ a.all-manufacturers:active {
 
 .header-top-wrapper {
   width: 100%;
-  margin-bottom: 54px;
+  margin-bottom: 59px;
 
   min-height: 42px;
 
@@ -968,6 +1003,138 @@ a.all-manufacturers:active {
   outline: 3px solid red;
 }
 
+.goods-and-services {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+}
+
+.goods-and-services li {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+
+  outline: 3px solid red;
+}
+
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 300px;
+  padding: 0;
+}
+
+.amenities li {
+  margin: 0;
+}
+
+.amenities li:first-child {
+  margin-bottom: 20px;
+}
+
+.goods-and-services li:nth-child(3),
+.goods-and-services li:nth-child(5) {
+  margin-right: 0;
+}
+
+.goods-and-services li:nth-child(n+4) {
+  margin-bottom: 0;
+}
+
+.assortment {
+  margin-bottom: 53px;
+}
+
+.popular-goods-subject {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.popular-goods-list ul {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+}
+
+.popular-goods-item {
+  width: 220px;
+  min-height: 318px;
+
+  outline: 3px solid yellow;
+}
+
+.popular-manufacturers-subject {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.popular-manufacturers-list ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+}
+
+.popular-manufacturers-item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 220px;
+  min-height: 145px;
+
+  outline: 3px solid yellow;
+}
+
+.popular-manufacturers-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.popular-manufacturers-list li:nth-child(n+5) {
+  margin-bottom: 0;
+}
+
+.services {
+  margin-top: 68px;
+}
+
+.services-wrapper {
+  margin-bottom: 82px;
+  width: 100%;
+  min-height: 520px;
+  padding-top: 1px;
+
+  background-color: #f4f7f9;
+}
+
+.services-list {
+  margin-right: 80px;
+  width: 240px;
+}
+
+.services-list li {
+  min-height: 61px;
+}
+
+.services-list-wrapper {
+  display: flex;
+}
+
+.services-list-wrapper ul {
+  padding: 0;
+  outline: 3px solid yellow;
+}
+
+.services-list-wrapper h3 {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
 .personal .my-orders {
   margin: 0;
   margin-left: 15px;
@@ -992,6 +1159,16 @@ a.all-manufacturers:active {
   min-height: 740px;
 
   outline: 3px solid red;
+}
+
+.filters h3 {
+  width: 220px;
+  min-height: 38px;
+  padding-left: 18px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  background-color: #f7f3ec;
 }
 
 .sort,
@@ -1048,13 +1225,22 @@ a.all-manufacturers:active {
 }
 
 .pagination {
-  margin: 0;
   margin-top: 52px;
-  padding: 0;
   min-height: 38px;
   outline: 3px solid red;
 }
 
+.pagination-list {
+  display: flex;
+}
+
+.pagination-list li {
+  margin-right: : 10px;
+  width: 38px;
+  height: 38px;
+
+  outline: 3px solid yellow;
+}
 
 .index-columns {
   display: flex;
