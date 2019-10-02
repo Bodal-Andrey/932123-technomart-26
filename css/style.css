@@ -970,7 +970,7 @@ a.all-manufacturers:active {
   padding-top: 10px;
 }
 
-.search label::before {
+.search::before {
   content: "";
 
   position: absolute;
@@ -987,12 +987,31 @@ a.all-manufacturers:active {
   opacity: 0.3;
 }
 
-.search label:hover::before {
+.search:hover,
+.search input:hover {
+  background-color: #212a3a;
+}
+
+.search:hover::before {
   opacity: 1;
 }
 
-.search label:active::before {
+.search:active,
+.search input:active {
+  background-color: #293449;
+}
+
+.search:active::before {
   opacity: 0.3;
+}
+
+.search:focus,
+.search input:focus {
+  background-color: #ffffff;
+}
+
+.search:focus::before path {
+  fill: #ee3643;
 }
 
 .order-registration {
