@@ -977,37 +977,18 @@ a.all-manufacturers:active {
   background-position: 17px 14px;
 }
 
+.search input::placeholder {
+  color: #ffffff;
+}
+
 .search input:focus {
   background-image: url("../img/icon-search-focus.svg");
 }
 
-/*
 .search input:hover {
-  background-color: #212a3a;
-}
-/*
-.search:hover::before {
-  opacity: 1;
+  background-image: url("../img/icon-search-hover.svg");
 }
 
-.search:active,
-.search input:active {
-  background-color: #293449;
-}
-
-.search:active::before {
-  opacity: 0.3;
-}
-
-.search:focus,
-.search input:focus {
-  background-color: #ffffff;
-}
-
-.search:focus::before path {
-  fill: #ee3643;
-}
-*/
 .order-registration {
   display: flex;
   justify-content: space-between;
