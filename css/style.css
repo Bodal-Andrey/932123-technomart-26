@@ -487,8 +487,6 @@ a.all-manufacturers:active {
 
 .about-company {
   width: 519px;
-
-  outline: 3px solid red;
 }
 
 .about-company h2 {
@@ -659,13 +657,9 @@ a.all-manufacturers:active {
 }
 
 .footer-navigation {
-  display: flex;
-  flex-wrap: wrap;
   width: 550px;
   margin-left: auto;
   padding: 0;
-
-  outline: 3px solid yellow;
 }
 
 .footer-navigation-top {
@@ -673,13 +667,6 @@ a.all-manufacturers:active {
   padding: 0;
   width: 550px;
   min-height: 50px;
-}
-
-
-.footer-navigation-bottom {
-  margin: 0;
-  padding: 0;
-  width: 525px;
 }
 
 .footer-navigation-top,
@@ -705,8 +692,6 @@ a.all-manufacturers:active {
 
 .footer-navigation ul {
   list-style: none;
-
-  outline: 3px solid yellow;
 }
 
 
@@ -718,13 +703,22 @@ a.all-manufacturers:active {
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
+}
 
-  outline: 3px solid red;
+.footer-navigation-bottom {
+  margin: 0;
+  margin-top: 35px;
+  margin-left: 25px;
+  padding: 0;
+  width: 525px;
+  min-height: 40px;
 }
 
 
-
 .footer-navigation-bottom a {
+  display: inline-block;
+  margin: 0;
+  margin-right: 60px;
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
@@ -792,15 +786,12 @@ a.all-manufacturers:active {
   min-height: 40px;
   margin: 0;
   background-color: #ffffff;
-  outline: 3px solid red;
 }
 
 .personal ul:last-child {
   display: flex;
   margin: 0;
   margin-top: 5px;
-
-  outline: 3px solid red;
 }
 
 .personal .name {
@@ -821,7 +812,7 @@ a.all-manufacturers:active {
   line-height: 21px;
   color: rgba(0, 0, 0, 0.3);
 
-  background-color: #f1f5f7;
+  background-color: #ffffff;
 }
 
 
@@ -842,6 +833,9 @@ a.all-manufacturers:active {
   background-image: url("../img/icon-user-hover.svg");
 }
 
+.personal .name:active::before {
+  background-image: url("../img/icon-user.svg");
+}
 
 .personal .exit {
   position: relative;
@@ -865,6 +859,10 @@ a.all-manufacturers:active {
 
 .personal .exit:hover::before {
   background-image: url("../img/icon-logout-hover.svg");
+}
+
+.personal .exit:active::before {
+  background-image: url("../img/icon-logout.svg");
 }
 
 .personal .my-orders,
@@ -1061,7 +1059,10 @@ a.all-manufacturers:active {
   color: #000000;
 }
 
-.old-price {
+.hammer-drill-item .old-price {
+  margin-top: 10px;
+  margin-left: 80px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -1070,32 +1071,29 @@ a.all-manufacturers:active {
   text-decoration: line-through;
 }
 
-.new-price {
+.hammer-drill-item .new-price {
+  box-sizing: border-box;
+  margin-top: 12px;
+  margin-left: 45px;
+  padding-top: 10px;
+  width: 141px;
+  height: 38px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
+  text-align: center;
 
-  background-color: #ee3643;
+  background-image: url("../img/item-button.svg");
 }
 
-.choice a:nth-child(1) {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-
-  background-color: #63a63e;
+.hammer-drill-item:nth-child(3n) .new-price {
+  margin-top: 40px;
 }
 
-.choice a:nth-child(2) {
-  font-size: 14px;
-  line-height: 18px;
-  color: #32425c;
 
-  background-color: #ffffff;
-  border: solid 3px #63a63e;
-}
 
 .modal-back h2 {
   font-size: 30px;
@@ -1125,8 +1123,6 @@ a.all-manufacturers:active {
   width: 940px;
   margin: 0 auto;
   padding: 0;
-
-  outline: 5px solid green;
   }
 
 .header-top-wrapper {
@@ -1359,8 +1355,6 @@ a.all-manufacturers:active {
   background-position: 0 0;
 }
 
-
-
 .goods-and-services {
   display: flex;
   flex-wrap: wrap;
@@ -1371,8 +1365,6 @@ a.all-manufacturers:active {
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 0;
-
-  outline: 3px solid red;
 }
 
 .amenities {
@@ -1418,8 +1410,6 @@ a.all-manufacturers:active {
 .popular-goods-item {
   width: 220px;
   min-height: 318px;
-
-  outline: 3px solid yellow;
 }
 
 .popular-manufacturers-subject {
@@ -1439,8 +1429,6 @@ a.all-manufacturers:active {
   margin-bottom: 20px;
   width: 220px;
   min-height: 145px;
-
-  outline: 3px solid yellow;
 }
 
 .popular-manufacturers-list li:nth-child(4n) {
@@ -1479,8 +1467,6 @@ a.all-manufacturers:active {
 
 .services-list-wrapper ul {
   padding: 0;
-
-  outline: 3px solid yellow;
 }
 
 .services-list-wrapper h3 {
@@ -1499,8 +1485,6 @@ a.all-manufacturers:active {
   justify-content: space-around;
   width: 380px;
   min-height: 50px;
-
-  outline: 3px solid red;
 }
 
 
@@ -1508,8 +1492,6 @@ a.all-manufacturers:active {
   margin: 0;
   width: 220px;
   min-height: 740px;
-
-  outline: 3px solid red;
 }
 
 .filters h3 {
@@ -1526,8 +1508,6 @@ a.all-manufacturers:active {
 .sort ul {
   display: flex;
   justify-content: space-around;
-
-  outline: 3px solid red;
 }
 
 .sort ul {
@@ -1545,8 +1525,6 @@ a.all-manufacturers:active {
   width: 700px;
   min-height: 1000px;
   margin: 0;
-
-  outline: 3px solid red;
 }
 
 .product-selection {
@@ -1555,12 +1533,12 @@ a.all-manufacturers:active {
 }
 
 .hammer-drill-item {
+  position: relative;
+
   margin-bottom: 20px;
   margin-right: 20px;
-  width: 220px;
+  width: 218px;
   min-height: 318px;
-
-  outline: 3px solid yellow;
 }
 
 .hammer-drill-item:nth-child(3n) {
@@ -1574,11 +1552,94 @@ a.all-manufacturers:active {
   padding: 0;
 }
 
+.hammer-drill-item .choice {
+  position: absolute;
+
+  display: none;
+
+  width: 218px;
+  height: 170px;
+
+  background-color: #ffffff;
+}
+
+.hammer-drill-item:hover .choice {
+  display: block;
+}
+
+.new::before {
+  content: "";
+
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  z-index: 10;
+
+  width: 60px;
+  height: 60px;
+
+  background-image: url("../img/new-flag.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.choice .buy {
+  display: block;
+  box-sizing: border-box;
+  width: 135px;
+  min-height: 38px;
+  padding-top: 10px;
+  margin-left: 45px;
+  margin-top: 45px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #63a63e;
+}
+
+.choice .bookmark {
+  display: block;
+  box-sizing: border-box;
+  width: 135px;
+  min-height: 38px;
+  padding-top: 10px;
+  margin-left: 45px;
+  margin-top: 5px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #ffffff;
+  border: solid 3px #63a63e;
+}
+
+.hammer-drill-item h3 {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 30px;
+  margin: 0;
+  margin-top: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+}
+
 .pagination {
   margin-top: 52px;
   min-height: 38px;
-
-  outline: 3px solid red;
 }
 
 .pagination-list {
@@ -1589,8 +1650,6 @@ a.all-manufacturers:active {
   margin-right: 10px;
   width: 38px;
   height: 38px;
-
-  outline: 3px solid yellow;
 }
 
 .index-columns {
@@ -1601,8 +1660,6 @@ a.all-manufacturers:active {
 
 .contacts {
   width: 300px;
-
-  outline: 3px solid red;
 }
 
 .about-hammer-drill-wrapper {
@@ -1735,13 +1792,9 @@ input[type="radio"].visually-hidden {
 }
  /* Всплывающие формы */
 
-
-
- .choice,
  .modal-back {
    display: none;
  }
-
 
  .modal {
   position: fixed;
@@ -1753,7 +1806,7 @@ input[type="radio"].visually-hidden {
    top: 120px;
    left: 50%;
 
-   /* display: none; */
+   display: none;
 
    box-sizing: border-box;
    width: 620px;
@@ -1770,6 +1823,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 
 .appointment-item:nth-child(-n+2) {
@@ -1785,6 +1839,9 @@ input[type="radio"].visually-hidden {
 .form-back textarea {
   width: 455px;
   min-height: 114px;
+
+  border: 2px solid #d7dcde;
+  outline: none;
 }
 
 .modal-close {
@@ -1806,6 +1863,19 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 100%;
   padding: 10px;
+
+  border: 2px solid #d7dcde;
+  outline: none;
+}
+
+.form-back textarea:hover,
+.appointment-item input:hover {
+  border: 2px solid #b5b5b5;
+}
+
+.form-back textarea:focus,
+.appointment-item input:focus {
+  border: 2px solid #ee3643;
 }
 
 .form-back-submit {
@@ -1831,14 +1901,16 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-  top: 150px;
+  top: 120px;
   left: 50%;
 
   display: none;
 
   width: 940px;
   height:445px;
-  margin-left: -320px;
+  margin-left: -470px;
 
+  box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+  background-color: #565656;
   background-image: url("../img/map.jpg");
 }
