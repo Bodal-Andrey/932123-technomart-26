@@ -68,12 +68,15 @@
     </header>
     <main>
       <div class="container">
-        <h1 class="hammer-drills">Перфораторы</h1>
         <ul class="breadcrumbs">
+          <li><a class="home" href="index.html">
+            <span class="visually-hidden">Каталог</span>
+          </a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="">Инструмент</a></li>
           <li><a class="current" href="">Перфораторы</a></li>
         </ul>
+        <h1 class="hammer-drills">Перфораторы</h1>
         <section class="product-selection">
             <h2 class="visually-hidden">Выбор товара</h2>
             <section class="filters">
@@ -84,37 +87,62 @@
                     <input type="text" name="range">
                     <input type="text" name="price">
                 </fieldset>
-                <fieldset>
+                <fieldset class="manufacturers">
                   <legend>Производители:</legend>
                   <ul>
                     <li>
-                      <label><input type="checkbox" name="Bosch" checked>BOSCH</label>
-                    </li>
-                    <li>
-                      <label><input type="checkbox" name="interskol">ИНТЕРСКОЛ</label>
-                    </li>
-                    <li>
-                      <label><input type="checkbox" name="Makita" checked>MAKITA</label>
-                    </li>
-                    <li>
-                      <label><input type="checkbox" name="DeWalt">DEWALT</label>
-                    </li>
-                    <li>
-                      <label><input type="checkbox" name="Hitachi">HITACHI</label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset>
-                  <legend>Питание:</legend>
-                  <ul>
-                    <li>
-                      <label class="accumulator">
-                        <input type="radio" name="supply" value="rechargeable" checked>Аккумуляторные
+                      <label>
+                        <input class="check-input" type="checkbox" name="Bosch" checked>
+                        <span class="check-box"></span>
+                        BOSCH
                       </label>
                     </li>
                     <li>
                       <label>
-                        <input type="radio" name="supply" value="wireline">Сетевые
+                        <input class="check-input" type="checkbox" name="interskol">
+                        <span class="check-box"></span>
+                        ИНТЕРСКОЛ
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="check-input" type="checkbox" name="Makita" checked>
+                        <span class="check-box"></span>
+                        MAKITA
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="check-input" type="checkbox" name="DeWalt">
+                        <span class="check-box"></span>
+                        DEWALT
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input  class="check-input" type="checkbox" name="Hita
+                        chi">
+                        <span class="check-box"></span>
+                        HITACHI
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="power-supply">
+                  <legend>Питание:</legend>
+                  <ul>
+                    <li>
+                      <label>
+                        <input class="radio-input" type="radio" name="supply" value="rechargeable">
+                        <span class="check-box"></span>
+                        Аккумуляторные
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="radio-input" type="radio" name="supply" value="wireline">
+                        <span class="check-box"></span>
+                        Сетевые
                       </label>
                     </li>
                   </ul>
@@ -245,13 +273,7 @@
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
           </section>
         </div>
-        <section class="modal-back">
-          <h2>Товар добавлен в корзину!</h2>
-          <a class="make-order" href="#">Оформить заказ</a>
-          <button class="close" type="button">Закрыть</button>
-          <button class="white-button" type="button">Продолжить покупки</button>
-        </section>
-    </main>
+      </main>
       <footer>
         <div class="footer-top-wrapper">
           <div class="footer-top container">
@@ -321,5 +343,17 @@
           </div>
         </div>
       </footer>
+      <section class="modal modal-back">
+        <h2>Товар добавлен в корзину!</h2>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <div class="modal-back-bottom"
+
+        >
+          <a class="make-order" href="#">Оформить заказ</a>
+          <button class="white-button" type="button">Продолжить покупки</button>
+        </div>
+      </section>
     </body>
     </html>
