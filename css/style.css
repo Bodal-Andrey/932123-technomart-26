@@ -659,23 +659,17 @@ a.all-manufacturers:active {
 .service-delivery:hover,
 .service-garanty:hover,
 .service-credit:hover {
-  font-size: 21px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #ffffff;
-
   background-color: #293449;
+  outline: none;
 }
 
-.service-delivery:active,
-.service-garanty:active,
-.service-credit:active {
-  font-size: 21px;
-  line-height: 30px;
-  font-weight: 700;
+.service-delivery:focus,
+.service-garanty:focus,
+.service-credit:focus {
   color: #32425c;
 
   background-color: #ffffff;
+  outline: none;
 }
 
 .about-company {
@@ -1728,11 +1722,15 @@ a.all-manufacturers:active {
 
 .services-list {
   margin-right: 80px;
+  margin-top: 60px;
   width: 240px;
 }
 
 .services-list li {
+  box-sizing: border-box;
   min-height: 61px;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 .services-list-wrapper {
@@ -1745,7 +1743,103 @@ a.all-manufacturers:active {
 
 .services-list-wrapper h3 {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 25px;
+
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.services ul:nth-child(2) {
+  margin-top: 55px;
+}
+
+.about-delivery {
+  position: relative;
+  display: none;
+}
+
+.service-delivery::after {
+  content: "";
+
+  position: absolute;
+
+  margin-left: 375px;
+  margin-top: 10px;
+
+  display: none;
+
+  width: 468px;
+  height: 261px;
+
+  background-image: url("../img/delivery.png");
+}
+
+.about-garanty {
+  position: relative;
+  display: none;
+}
+
+.service-garanty::after {
+  content: "";
+
+  position: absolute;
+
+  margin-left: 450px;
+  margin-top: -70px;
+
+  display: none;
+
+  width: 389px;
+  height: 283px;
+
+  background-image: url("../img/guarantee.png");
+}
+
+.about-credit {
+  position: relative;
+  /* display: none; */
+}
+
+.about-credit a {
+  display: block;
+  box-sizing: border-box;
+  width: 195px;
+  min-height: 38px;
+  padding-top: 10px;
+  margin-top: 30px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #ff5357;
+  border-radius: 3px;
+}
+
+.about-credit a:hover {
+  background-color: #ca2c37;
+}
+
+.about-credit a:active {
+  background-color: #ba2732;
+}
+
+.service-credit::after {
+  content: "";
+
+  position: absolute;
+
+  margin-left: 410px;
+  margin-top: -130px;
+
+  /* display: none; */
+
+  width: 465px;
+  height: 285px;
+
+  background-image: url("../img/credit.png");
 }
 
 .personal .my-orders {
