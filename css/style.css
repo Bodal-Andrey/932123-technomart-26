@@ -91,6 +91,10 @@ header {
   background-color: #63a63e;
 }
 
+.header-top {
+  height: 40px;
+}
+
 .technomart-definition {
   vertical-align: middle;
   font-size: 16px;
@@ -100,6 +104,15 @@ header {
 }
 
 .address a {
+  box-sizing: border-box;
+  display: block;
+
+  margin-top: 12px;
+  min-height: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -111,7 +124,10 @@ header {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-}
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 10px;
+  }
 
 a.enter {
   font-size: 21px;
@@ -143,9 +159,10 @@ a.registration:active {
 
 .header-navigation {
   display: flex;
-  justify-content: space-around;
+
   padding: 0;
   margin: 0;
+  margin-top: 25px;
 
   list-style: none;
 
@@ -153,9 +170,17 @@ a.registration:active {
   background-color: #32425c;
 }
 
+.header-navigation li {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+
 .header-navigation a {
   display: block;
-  padding: 22px 31px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+
 
   font-size: 17px;
   line-height: 17px;
@@ -178,6 +203,7 @@ a.registration:active {
 .services ul {
   list-style: none;
 }
+
 
 .materials {
   position: relative;
@@ -298,15 +324,18 @@ a.registration:active {
   text-transform: uppercase;
   color: #ffffff;
 
-  background-color: rgba(229, 172, 64, 0.1);
+  background-color: #000000;
+  opacity: 0.1;
 }
 
 .materials a:hover {
-  background-color: rgba(229, 172, 64, 0.2);
+  background-color: #000000;
+  opacity: 0.2;
 }
 
 .materials a:active {
-  background-color: rgba(229, 172, 64, 0.3);
+  background-color: #000000;
+  opacity: 0.3;
 }
 
 .instrument a {
@@ -315,15 +344,18 @@ a.registration:active {
   text-transform: uppercase;
   color: #ffffff;
 
-  background-color: rgba(53, 169, 204, 0.1);
+  background-color: #000000;
+  opacity: 0.1;
 }
 
 .instrument a:hover {
-  background-color: rgba(53, 169, 204, 0.2);
+  background-color: #000000;
+  opacity: 0.2;
 }
 
 .instrument a:active {
-  background-color: rgba(53, 169, 204, 0.3);
+  background-color: #000000;
+  opacity: 0.3;
 }
 
 .technics a {
@@ -332,15 +364,18 @@ a.registration:active {
   text-transform: uppercase;
   color: #ffffff;
 
-  background-color: rgba(198, 130, 194, 0.1);
+  background-color: #000000;
+  opacity: 0.1;
 }
 
 .technics a:hover {
-  background-color: rgba(198, 130, 194, 0.2);
+  background-color: #000000;
+  opacity: 0.2;
 }
 
 .technics a:active {
-  background-color: rgba(198, 130, 194, 0.3);
+  background-color: #000000;
+  opacity: 0.3;
 }
 
 .discount a {
@@ -349,15 +384,18 @@ a.registration:active {
   text-transform: uppercase;
   color: #ffffff;
 
-  background-color: rgba(128, 193, 128, 0.1);
+  background-color: #000000;
+  opacity: 0.1;
 }
 
 .discount a:hover {
-  background-color: rgba(128, 193, 128, 0.2);
+  background-color: #000000;
+  opacity: 0.2;
 }
 
 .discount a:active {
-  background-color: rgba(128, 193, 128, 0.3);
+  background-color: #000000;
+  opacity: 0.3;
 }
 
 .delivery a {
@@ -366,15 +404,18 @@ a.registration:active {
   text-transform: uppercase;
   color: #ffffff;
 
-  background-color: rgba(229, 172, 64, 0.1);
+  background-color: #000000;
+  opacity: 0.1;
 }
 
-.discount a:hover {
-  background-color: rgba(229, 172, 64, 0.2);
+.delivery a:hover {
+  background-color: #000000;
+  opacity: 0.2;
 }
 
-.discount a:active {
-  background-color: rgba(229, 172, 64, 0.3);
+.delivery a:active {
+  background-color: #000000;
+  opacity: 0.3;
 }
 
 .drills a {
@@ -441,7 +482,8 @@ a.registration:active {
   margin-bottom: 0;
 }
 
-.assortment {
+.assortment.container {
+  margin-top: 55px;
   margin-bottom: 53px;
 }
 
@@ -588,8 +630,8 @@ a.registration:active {
 }
 
 .popular-manufacturers-subject h2 {
-  padding-top: 10px;
-  padding-left: 30px;
+  padding-top: 5px;
+  padding-left: 25px;
 }
 
 .popular-manufacturers-subject a {
@@ -873,7 +915,7 @@ a.all-manufacturers:active {
 .footer-navigation-top a {
   display: inline-block;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 38px;
   margin-right: 60px;
   font-size: 18px;
   line-height: 24px;
@@ -1072,6 +1114,16 @@ a.all-manufacturers:active {
 }
 
 .sort {
+  display: flex;
+}
+
+.sort {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 0;
+  width: 700px;
+  min-height: 20px;
+
   background-color: #f7f3ec;
 }
 
@@ -1082,6 +1134,13 @@ a.all-manufacturers:active {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.sort h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 100px;
 }
 
 .sort a {
@@ -1386,7 +1445,7 @@ a.all-manufacturers:active {
 .header-top-wrapper {
   width: 100%;
 
-  min-height: 42px;
+  min-height: 25px;
 
   background-color: #293449;
 }
@@ -1415,12 +1474,14 @@ a.all-manufacturers:active {
 .search input {
   box-sizing: border-box;
   width: 100%;
-  height: 45px;
+  height: 42px;
   padding-left: 50px;
+  padding-top: 0;
 
   background-repeat: no-repeat;
   background-image: url("../img/icon-search.svg");
   background-position: 17px 14px;
+  outline: none;
 }
 
 .search input::placeholder {
@@ -1448,9 +1509,13 @@ a.all-manufacturers:active {
   box-sizing: border-box;
   width: 150px;
   display: block;
-  padding-top: 14px;
+  padding-top: 10px;
 
   text-align: center;
+}
+
+.order-registration a:nth-child(-n+2) {
+  padding-left: 12px;
 }
 
 .bookmarks::before {
@@ -1458,7 +1523,7 @@ a.all-manufacturers:active {
 
   position: absolute;
   left: 15px;
-  top: 15px;
+  top: 10px;
 
   width: 14px;
   height: 16px;
@@ -1474,7 +1539,7 @@ a.all-manufacturers:active {
 
   position: absolute;
   left: 15px;
-  top: 15px;
+  top: 10px;
 
   width: 15px;
   height: 15px;
@@ -1498,7 +1563,7 @@ a.all-manufacturers:active {
 .header-middle {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 44px;
+  margin-top: 30px;
 }
 
 .technomart-definition {
@@ -1536,10 +1601,6 @@ a.all-manufacturers:active {
   background-position: 0 0;
 }
 
-.address p {
-  margin: 10px;
-}
-
 .header-bottom {
   display: flex;
   justify-content: space-between;
@@ -1549,13 +1610,15 @@ a.all-manufacturers:active {
 .entrance {
   display: flex;
   justify-content: space-between;
+
+  padding-top: 15px;
 }
 
 .entrance a {
   display: block;
   width: auto;
-  height: 25px;
-  padding: 12px 25px;
+  height: 22px;
+  padding: 12px 25px 10px 25px;
 }
 
 .entrance .enter {
@@ -1668,32 +1731,32 @@ a.all-manufacturers:active {
 
 .popular-manufacturers-item .bosch {
   padding-top: 55px;
-  padding-left: 50px;
+  padding-left: 45px;
 }
 
 .popular-manufacturers-item .makita {
   padding-top: 53px;
-  padding-left: 50px;
+  padding-left: 45px;
 }
 
 .popular-manufacturers-item .dewalt {
-  padding-top: 50px;
-  padding-left: 40px;
+  padding-top: 52px;
+  padding-left: 35px;
 }
 
 .popular-manufacturers-item .interskol {
   padding-top: 25px;
-  padding-left: 10px;
+  padding-left: 7px;
 }
 
 .popular-manufacturers-item .hitachi {
   padding-top: 60px;
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
 .popular-manufacturers-item .lg {
   padding-top: 35px;
-  padding-left: 50px;
+  padding-left: 45px;
 }
 
 .popular-manufacturers-item .aeg {
@@ -1711,9 +1774,9 @@ a.all-manufacturers:active {
 }
 
 .services-wrapper {
-  margin-bottom: 82px;
+  margin-bottom: 55px;
   width: 100%;
-  min-height: 520px;
+  min-height: 550px;
   padding-top: 1px;
   margin-top: 80px;
 
@@ -1721,15 +1784,31 @@ a.all-manufacturers:active {
 }
 
 .services-list {
+  position: relative;
+
   margin-right: 80px;
   margin-top: 60px;
   width: 240px;
 }
 
+.services-list::after {
+  content: "";
+
+  position: absolute;
+  top: -45px;;
+  right: 0;
+
+  width: 10px;
+  height: 279px;
+
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+}
+
 .services-list li {
   box-sizing: border-box;
   min-height: 61px;
-  padding-top: 10px;
+  padding-top: 13px;
   padding-left: 20px;
 }
 
@@ -1927,32 +2006,20 @@ a.all-manufacturers:active {
   background-color: #f7f3ec;
 }
 
-.sort,
-.sort ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-.sort ul {
-  width: 480px;
-}
-
-.sort {
-  margin: 0;
-  margin-bottom: 21px;
-  width: 700px;
-  min-height: 24px;
-}
-
 .catalog-hammer-drill {
   width: 700px;
   min-height: 1000px;
   margin: 0;
+  margin-left: 20px;
 }
 
 .product-selection {
   display: flex;
   flex-wrap: wrap;
+}
+
+.manufacturers {
+  margin-top: 70px;
 }
 
 .hammer-drill-item {
@@ -1972,11 +2039,28 @@ a.all-manufacturers:active {
   margin-right: 0;
 }
 
-.catalog-hammer-drill ul {
+.sort-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+}
+
+.hammer-drill-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sort-list {
+  margin-top: 8px;
+  margin-left: 40px;
+}
+
+.sort-list li:nth-child(n+2) {
+  margin-left: 70px;
 }
 
 .hammer-drill-item .choice {
