@@ -286,19 +286,33 @@ a.registration:active {
 }
 
 .drills {
-  position: relative;
+  /* display: none; */
 
   width: 620px;
   height: 266px;
   padding: 0;
+  margin-top: -25px;
 
   background-image: url("../img/slider-image.jpg");
 }
 
-.drills h3 {
+.perforators {
+  display: none;
+
+  width: 620px;
+  height: 266px;
+  padding: 0;
+  margin-top: -25px;
+
+  background-image: url("../img/slide-image.jpg");
+}
+
+.drills h3,
+.perforators h3 {
   margin: 0;
   margin-left: 25px;
   margin-top: 25px;
+  padding-top: 25px;
 
   font-size: 36px;
   line-height: 36px;
@@ -307,7 +321,8 @@ a.registration:active {
   text-transform: uppercase;
 }
 
-.drills span {
+.drills span,
+.perforators span {
   display: block;
   margin-left: 25px;
 
@@ -316,7 +331,62 @@ a.registration:active {
   color: #ffffff;
 }
 
+.drills a,
+.perforators a {
+  display: block;
+  box-sizing: border-box;
+  width: 195px;
+  height: 38px;
+  padding-top: 10px;
+  margin-top: 120px;
+  margin-left: 25px;
 
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.drills a:hover,
+.perforators a:hover {
+  background-color: #ca2c37;
+}
+
+.drills a:active,
+.perforators a:active {
+  background-color: #ba2732;
+}
+
+.backward {
+  position: absolute;
+  top: 115px;
+  left: 22px;
+
+  width: 22px;
+  height: 40px;
+
+  background-image: url("../img/icon-left.svg");
+  background-color: transparent;
+  border: none;
+}
+
+.forward {
+  position: absolute;
+  top: 115px;
+  right: 22px;
+
+  width: 22px;
+  height: 40px;
+
+  background-image: url("../img/icon-right.svg");
+  background-color: transparent;
+  border: none;
+}
 
 .materials a {
   font-size: 14px;
@@ -418,34 +488,6 @@ a.registration:active {
   opacity: 0.3;
 }
 
-.drills a {
-  display: block;
-  box-sizing: border-box;
-  width: 195px;
-  height: 38px;
-  padding-top: 10px;
-  margin-top: 120px;
-  margin-left: 25px;
-
-
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-align: center;
-
-  background-color: #ee3643;
-  border-radius: 3px;
-}
-
-.drills a:hover {
-  background-color: #ca2c37;
-}
-
-.drills a:active {
-  background-color: #ba2732;
-}
-
 .goods-and-services {
   display: flex;
   flex-wrap: wrap;
@@ -456,6 +498,10 @@ a.registration:active {
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 0;
+}
+
+.goods-and-services li:nth-child(4) {
+  position: relative;
 }
 
 .amenities {
@@ -998,17 +1044,21 @@ a.all-manufacturers:active {
 .personal ul:first-child {
   display: flex;
   justify-content: space-between;
+
   margin: 0;
+  margin-top: 15px;
+  padding: 0;
   width: 299px;
   min-height: 40px;
-  margin: 0;
+
   background-color: #ffffff;
 }
 
 .personal ul:last-child {
   display: flex;
   margin: 0;
-  margin-top: 5px;
+  padding: 0;
+  margin-top: 10px;
 }
 
 .personal .name {
@@ -1115,9 +1165,7 @@ a.all-manufacturers:active {
 
 .sort {
   display: flex;
-}
 
-.sort {
   box-sizing: border-box;
   margin: 0;
   margin-bottom: 0;
@@ -1163,15 +1211,6 @@ a.all-manufacturers:active {
   text-decoration-color: #ee3643;
 }
 
-.sort a {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  color: rgba(0, 0, 0, 0.3);
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #ee3643;
-}
 .sort a:active {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1180,15 +1219,61 @@ a.all-manufacturers:active {
   text-decoration: none;
 }
 
+a.up-dir {
+  display: block;
+
+  width: 11px;
+  height: 10px;
+  margin-left: 40px;
+  margin-top: 5px;
+
+  background-image: url("../img/icon-up-dir.svg");
+}
+
+a.up-dir:hover {
+  background-image: url("../img/icon-up-dir-hover.svg");
+}
+
+a.up-dir:active {
+  background-image: url("../img/icon-up-dir-active.svg");
+}
+
+a.down-dir {
+  display: block;
+
+  width: 11px;
+  height: 10px;
+  margin-left: 20px;
+  margin-top: 5px;
+
+  background-image: url("../img/icon-down-dir.svg");
+}
+
+a.down-dir:hover {
+  background-image: url("../img/icon-down-dir-hover.svg");
+}
+
+a.down-dir:active {
+  background-image: url("../img/icon-down-dir-active.svg");
+}
+
 .pagination a {
+  display: block;
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  padding-top: 10px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
+  border-radius: 3px;
 }
 
 .pagination a:hover {
@@ -1247,11 +1332,113 @@ a.all-manufacturers:active {
   border: none;
 }
 
+.filter-item {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+
+  border: none;
+}
+
+.range-filter {
+  width: 220px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-top: 13px;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #f7f3ec;
+  border-radius: 53x;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  width: 20px;
+  height: 22px;
+  padding: 0;
+
+  background-image: url("../img/filter-button.svg");
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls label {
+  display: inline-block;
+}
+
+.price-controls input {
+  width: 95px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+
+  background-color: #f7f3ec;
+  border-radius: 3px;
+  border: none;
+}
+
+.price-controls .max-price {
+  margin-left: 5px;
+}
+
+.max-price input[name="max-price"] {
+  margin-left: 5px;
+}
+
 .manufacturers {
   position: relative;
   width: 220px;
   min-height: 260px;
   padding: 0;
+  margin-top: 40px;
+}
+
+.manufacturers::before {
+  content: "";
+
+  position: absolute;
+  top: -16px;
+  left: -2px;
+
+  width: 220px;
+  height: 1px;
+
+  background-color: #f7f3ec;
 }
 
 .manufacturers ul {
@@ -1259,7 +1446,7 @@ a.all-manufacturers:active {
 }
 
 .manufacturers li {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   }
 
 .manufacturers label {
@@ -1311,6 +1498,32 @@ a.all-manufacturers:active {
   width: 220px;
   min-height: 180px;
   padding: 0;
+  margin-top: 5px;
+}
+
+.power-supply::before {
+  content: "";
+
+  position: absolute;
+  top: -16px;
+  left: -2px;
+
+  width: 220px;
+  height: 1px;
+
+  background-color: #f7f3ec;
+}
+.manufacturers::before {
+  content: "";
+
+  position: absolute;
+  top: -16px;
+  left: -2px;
+
+  width: 220px;
+  height: 1px;
+
+  background-color: #f7f3ec;
 }
 
 .power-supply ul {
@@ -1322,7 +1535,7 @@ a.all-manufacturers:active {
   }
 
 .power-supply label {
-  padding-left: 40px;
+  padding-left: 38px;
 }
 
 .power-supply .check-box {
@@ -1377,6 +1590,7 @@ a.all-manufacturers:active {
 .filter-button {
   width: 140px;
   min-height: 38px;
+  padding-top: 5px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1997,11 +2211,13 @@ a.all-manufacturers:active {
 }
 
 .filters h3 {
+  box-sizing: border-box;
   width: 220px;
-  min-height: 38px;
+  min-height: 35px;
   padding-left: 18px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
 
   background-color: #f7f3ec;
 }
@@ -2016,10 +2232,6 @@ a.all-manufacturers:active {
 .product-selection {
   display: flex;
   flex-wrap: wrap;
-}
-
-.manufacturers {
-  margin-top: 70px;
 }
 
 .hammer-drill-item {
@@ -2041,9 +2253,13 @@ a.all-manufacturers:active {
 
 .sort-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0;
   padding: 0;
+}
+
+.sort-list .current {
+  color: #ee3643;
 }
 
 .hammer-drill-list {
@@ -2059,7 +2275,8 @@ a.all-manufacturers:active {
   margin-left: 40px;
 }
 
-.sort-list li:nth-child(n+2) {
+.sort-list li:nth-child(2),
+.sort-list li:nth-child(3) {
   margin-left: 70px;
 }
 
@@ -2188,18 +2405,25 @@ a.all-manufacturers:active {
 }
 
 .pagination {
-  margin-top: 52px;
+  margin-top: 30px;
+  margin-bottom: 40px;
   min-height: 38px;
 }
 
 .pagination-list {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-list li {
   margin-right: 10px;
   width: 38px;
   height: 38px;
+}
+
+.pagination-list .next {
+  width: 140px;
 }
 
 .index-columns {
@@ -2214,8 +2438,8 @@ a.all-manufacturers:active {
 
 .about-hammer-drill-wrapper {
   width: 100%;
-  min-height: 260px;
-  padding-top: 70px;
+  min-height: 220px;
+  padding-top: 60px;
 
   background-color: #f4f7f9;
 }
