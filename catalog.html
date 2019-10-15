@@ -82,10 +82,25 @@
             <section class="filters">
               <h3>Фильтр:</h3>
               <form class="filter" action="#" method="get">
-                <fieldset>
+                <fieldset class="filter-item">
                   <legend>Цена:</legend>
-                    <input type="text" name="range">
-                    <input type="text" name="price">
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="min-price">
+                        <input name="min-price" type="text" value="0">
+                      </label>
+                      <label class="max-price">&mdash;
+                        <input name="max-price" type="text" value="30000">
+                      </label>
+                    </div>
+                  </div>
                 </fieldset>
                 <fieldset class="manufacturers">
                   <legend>Производители:</legend>
@@ -163,6 +178,16 @@
                   </li>
                   <li>
                     <a href="">По функционалу</a>
+                  </li>
+                  <li>
+                    <a class="up-dir" href="">
+                      <span class="visually-hidden">Вверх</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="down-dir" href="">
+                      <span class="visually-hidden">Вниз</span>
+                    </a>
                   </li>
                 </ul>
               </section>
@@ -260,7 +285,7 @@
                   <li><a class="current">1</a></li>
                   <li><a href="">2</a></li>
                   <li><a href="">3</a></li>
-                  <li><a href="">Следующая</a></li>
+                  <li><a class="next" href="">Следующая</a></li>
                 </ul>
               </div>
             </section>
