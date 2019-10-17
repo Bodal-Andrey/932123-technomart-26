@@ -1912,8 +1912,16 @@ a.down-dir:active {
 
 .header-middle {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: 30px;
+}
+
+.address {
+  margin-left: 65px;
+}
+
+.personal {
+  margin-left: 50px;
 }
 
 .technomart-definition {
@@ -1964,8 +1972,8 @@ a.down-dir:active {
 
 .entrance {
   display: flex;
-  justify-content: space-between;
 
+  margin-left: 67px;
   padding-top: 15px;
 }
 
@@ -1973,7 +1981,7 @@ a.down-dir:active {
   display: block;
   width: auto;
   height: 22px;
-  padding: 12px 25px 10px 23px;
+  padding: 13px 25px 10px 23px;
 }
 
 .entrance .enter {
