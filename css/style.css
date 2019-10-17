@@ -17,7 +17,6 @@ a {
 
 header {
   background-color: #f4f7f9;
-  margin: 0;
   padding: 0;
 }
 
@@ -67,7 +66,7 @@ header {
 .logo a{
   display: block;
   width: 220px;
-  height: 47px;
+  height: 45px;
 
   text-align: center;
 
@@ -107,11 +106,11 @@ header {
   box-sizing: border-box;
   display: block;
 
-  margin-top: 12px;
+  margin-top: 15px;
   min-height: 15px;
   padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-left: 17px;
 
   font-size: 21px;
   line-height: 21px;
@@ -125,8 +124,8 @@ header {
   line-height: 24px;
   color: #32425c;
   margin: 0;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-top: 7px;
+  margin-left: 8px;
   }
 
 a.enter {
@@ -162,7 +161,7 @@ a.registration:active {
 
   padding: 0;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 23px;
 
   list-style: none;
 
@@ -205,7 +204,7 @@ a.registration:active {
 
 .header-navigation a {
   display: block;
-  padding-top: 18px;
+  padding-top: 20px;
   padding-bottom: 25px;
 
 
@@ -313,14 +312,44 @@ a.registration:active {
 }
 
 .drills {
+  position: relative;
   /* display: none; */
 
   width: 620px;
   height: 266px;
   padding: 0;
-  margin-top: -25px;
+  margin-top: -21px;
 
   background-image: url("../img/slider-image.jpg");
+}
+
+.drills::before {
+  content: "";
+
+  position: absolute;
+  bottom: 35px;
+  left: 295px;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.drills::after {
+  content: "";
+
+  position: absolute;
+  bottom: 35px;
+  left: 315px;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: #ee3643;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
 }
 
 .perforators {
@@ -329,17 +358,46 @@ a.registration:active {
   width: 620px;
   height: 266px;
   padding: 0;
-  margin-top: -25px;
+  margin-top: -21px;
 
   background-image: url("../img/slide-image.jpg");
+}
+
+.perforators::before {
+  content: "";
+
+  position: absolute;
+  bottom: 35px;
+  left: 295px;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: #ee3643;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.perforators::after {
+  content: "";
+
+  position: absolute;
+  bottom: 35px;
+  left: 315px;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 .drills h3,
 .perforators h3 {
   margin: 0;
   margin-left: 25px;
-  margin-top: 25px;
-  padding-top: 25px;
+  margin-top: 21px;
+  padding-top: 23px;
 
   font-size: 36px;
   line-height: 36px;
@@ -352,6 +410,7 @@ a.registration:active {
 .perforators span {
   display: block;
   margin-left: 25px;
+  margin-top: 2px;
 
   font-size: 18px;
   line-height: 24px;
@@ -364,8 +423,9 @@ a.registration:active {
   box-sizing: border-box;
   width: 195px;
   height: 38px;
-  padding-top: 10px;
-  margin-top: 120px;
+  padding-top: 11px;
+  padding-left: 5px;
+  margin-top: 121px;
   margin-left: 25px;
 
 
@@ -391,8 +451,8 @@ a.registration:active {
 
 .backward {
   position: absolute;
-  top: 115px;
-  left: 22px;
+  top: 114px;
+  left: 25px;
 
   width: 22px;
   height: 40px;
@@ -404,8 +464,8 @@ a.registration:active {
 
 .forward {
   position: absolute;
-  top: 115px;
-  right: 22px;
+  top: 114px;
+  right: 20px;
 
   width: 22px;
   height: 40px;
@@ -541,7 +601,7 @@ a.registration:active {
 }
 
 .assortment.container {
-  margin-top: 55px;
+  margin-top: 56px;
   margin-bottom: 53px;
 }
 
@@ -551,8 +611,13 @@ a.registration:active {
 .discount h3,
 .delivery h3 {
   margin: 0;
+  margin-left: 22px;
+  margin-top: 21px;
+}
+
+.technics h3 {
   margin-left: 23px;
-  margin-top: 23px;
+  margin-top: 21px;
 }
 
 .materials a,
@@ -566,19 +631,25 @@ a.registration:active {
   width: 135px;
   height: 38px;
   margin-left: 25px;
-  margin-top: 10px;
+  margin-top: 12px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 11px;
 
   border-radius: 3px;
+}
+
+.technics a,
+.discount a,
+.delivery a {
+  margin-left: 23px;
 }
 
 .materials::after {
   content: "";
 
   position: absolute;
-  top: 32px;
-  right: 45px;
+  top: 31px;
+  right: 43px;
 
   width: 44px;
   height: 65px;
@@ -590,8 +661,8 @@ a.registration:active {
   content: "";
 
   position: absolute;
-  top: 35px;
-  right: 30px;
+  top: 33px;
+  right: 28px;
 
   width: 75px;
   height: 61px;
@@ -603,8 +674,8 @@ a.registration:active {
   content: "";
 
   position: absolute;
-  top: 33px;
-  right: 33px;
+  top: 31px;
+  right: 31px;
 
   width: 78px;
   height: 62px;
@@ -616,8 +687,8 @@ a.registration:active {
   content: "";
 
   position: absolute;
-  top: 25px;
-  right: 45px;
+  top: 26px;
+  right: 46px;
 
   width: 59px;
   height: 72px;
@@ -629,8 +700,8 @@ a.registration:active {
   content: "";
 
   position: absolute;
-  top: 35px;
-  right: 30px;
+  top: 32px;
+  right: 31px;
 
   width: 78px;
   height: 63px;
@@ -646,8 +717,8 @@ a.registration:active {
 }
 
 .popular-goods h2 {
-  margin: 30px;
-  margin-left: 25px;
+  margin-left: 28px;
+  margin-top: 28px;
 
   font-size: 30px;
   line-height: 30px;
@@ -657,10 +728,11 @@ a.registration:active {
 
 .all-popular-goods {
   box-sizing: border-box;
-  margin: 25px;
+  margin-top: 23px;
+  margin-right: 24px;
   width: 253px;
   height: 38px;
-  padding-top: 10px;
+  padding-top: 11px;
 
   font-size: 14px;
   line-height: 18px;
@@ -689,7 +761,7 @@ a.registration:active {
 
 .popular-manufacturers-subject h2 {
   padding-top: 5px;
-  padding-left: 25px;
+  padding-left: 28px;
 }
 
 .popular-manufacturers-subject a {
@@ -710,7 +782,8 @@ a.registration:active {
 }
 
 a.all-manufacturers {
-  margin: 25px;
+  margin-top: 24px;
+  margin-right: 24px;
   width: 253px;
   height: 38px;
 
@@ -792,6 +865,7 @@ a.all-manufacturers:active {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+  letter-spacing: 0.1px;
 }
 
 .about-company a {
@@ -823,6 +897,8 @@ a.all-manufacturers:active {
   list-style: none;
   margin: 0;
   margin-top: 20px;
+  padding: 0;
+  padding-left: 36px;
 }
 
 .transportation-list li {
@@ -840,8 +916,8 @@ a.all-manufacturers:active {
   content: "";
 
   position: absolute;
-  left: -40px;
-  top: 8px;
+  left: -36px;
+  top: 9px;
 
 
   width: 25px;
@@ -854,8 +930,8 @@ a.all-manufacturers:active {
   content: "";
 
   position: absolute;
-  left: -40px;
-  top: 28px;
+  left: -36px;
+  top: 29px;
 
 
   width: 25px;
@@ -868,8 +944,8 @@ a.all-manufacturers:active {
   content: "";
 
   position: absolute;
-  left: -40px;
-  top: 27px;
+  left: -36px;
+  top: 28px;
 
 
   width: 25px;
@@ -904,12 +980,14 @@ a.all-manufacturers:active {
 }
 
 .write-to-us {
-  display: inline-block;
+  display: block;
+  box-sizing: border-box;
+  width: 300px;
   padding-top: 10px;
-  padding-left: 65px;
+  padding-left: 63px;
   padding-right: 55px;
   padding-bottom: 8px;
-  margin-top: 40px;
+  margin-top: 41px;
 
   font-size: 14px;
   line-height:18px;
@@ -939,6 +1017,7 @@ a.all-manufacturers:active {
 
 .footer-navigation-top {
   margin: 0;
+  margin-left: 3px;
   padding: 0;
   width: 550px;
   min-height: 50px;
@@ -973,8 +1052,8 @@ a.all-manufacturers:active {
 .footer-navigation-top a {
   display: inline-block;
   margin: 0;
-  margin-top: 35px;
-  margin-right: 60px;
+  margin-top: 37px;
+  margin-right: 59px;
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
@@ -1070,15 +1149,16 @@ a.all-manufacturers:active {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 12px;
+  margin-left: 3px;
 }
 
 .personal .name {
   position: relative;
 
   display: inline-block;
-  margin-top: 10px;
-  margin-left: 45px;
+  margin-top: 12px;
+  margin-left: 47px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -1127,8 +1207,8 @@ a.all-manufacturers:active {
   content: "";
 
   position: absolute;
-  top: -3px;
-  left: -33px;
+  top: 0px;
+  left: -30px;
 
   width: 20px;
   height: 18px;
@@ -1197,7 +1277,7 @@ a.all-manufacturers:active {
 }
 
 .sort h3 {
-  margin-top: 10px;
+  margin-top: 8px;
   margin-bottom: 10px;
   margin-left: 20px;
   margin-right: 100px;
@@ -1236,7 +1316,7 @@ a.up-dir {
 
   width: 11px;
   height: 10px;
-  margin-left: 40px;
+  margin-left: 47px;
   margin-top: 5px;
 
   background-image: url("../img/icon-up-dir.svg");
@@ -1255,7 +1335,7 @@ a.down-dir {
 
   width: 11px;
   height: 10px;
-  margin-left: 20px;
+  margin-left: 21px;
   margin-top: 5px;
 
   background-image: url("../img/icon-down-dir.svg");
@@ -1346,7 +1426,7 @@ a.down-dir:active {
 
 .filter-item {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 12px;
   padding: 0;
 
   border: none;
@@ -1360,7 +1440,7 @@ a.down-dir:active {
   position: relative;
 
   height: 41px;
-  margin-top: 13px;
+  margin-top: 14px;
   padding-top: 39px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1409,7 +1489,8 @@ a.down-dir:active {
 
 .price-controls input {
   width: 95px;
-  padding-top: 10px;
+  padding-left: 3px;
+  padding-top: 8px;
   padding-bottom: 10px;
   margin-top: 10px;
 
@@ -1425,11 +1506,11 @@ a.down-dir:active {
 }
 
 .price-controls .max-price {
-  margin-left: 5px;
+  margin-left: 4px;
 }
 
 .max-price input[name="max-price"] {
-  margin-left: 5px;
+  /* margin-left: 5px; */
 }
 
 .manufacturers {
@@ -1437,7 +1518,7 @@ a.down-dir:active {
   width: 220px;
   min-height: 260px;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 43px;
 }
 
 .manufacturers::before {
@@ -1455,23 +1536,23 @@ a.down-dir:active {
 
 .manufacturers ul {
   padding: 0;
+  margin: 0;
+}
+
+.manufacturers li {
+  margin-bottom: 20px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .manufacturers li:nth-child(1) {
-  margin-bottom: 20px;
+  margin-top: 15px;
   }
 
-.manufacturers li:nth-child(2) {
-  margin-bottom: 23px;
-  }
-
-.manufacturers li:nth-child(3) {
-  margin-bottom: 23px;
-  }
-
-.manufacturers li:nth-child(4) {
-  margin-bottom: 22px;
-  }
 
 .manufacturers label {
   padding-left: 32px;
@@ -1488,8 +1569,8 @@ a.down-dir:active {
 
   width: 27px;
   height: 23px;
-  margin-left: -35px;
-  margin-top: -5px;
+  margin-left: -34px;
+  margin-top: -3px;
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
@@ -1525,6 +1606,17 @@ a.down-dir:active {
   margin-top: 5px;
 }
 
+.power-supply li {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
 .power-supply::before {
   content: "";
 
@@ -1552,16 +1644,12 @@ a.down-dir:active {
 
 .power-supply ul {
   padding: 0;
-  padding-top: 15px;
+  padding-top: 13px;
   margin: 0;
 }
 
-.power-supply li {
-  margin-bottom: 20px;
-  }
-
 .power-supply label {
-  padding-left: 30px;
+  padding-left: 32px;
 }
 
 .power-supply .check-box {
@@ -1569,8 +1657,8 @@ a.down-dir:active {
 
   width: 25px;
   height: 25px;
-  margin-left: -33px;
-  margin-top: -5px;
+  margin-left: -35px;
+  margin-top: -2px;
 
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
@@ -1639,8 +1727,8 @@ a.down-dir:active {
 }
 
 .hammer-drill-item .old-price {
-  margin-top: 10px;
-  margin-left: 80px;
+  margin-top: 12px;
+  margin-left: 78px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
@@ -1653,7 +1741,7 @@ a.down-dir:active {
 .hammer-drill-item .new-price {
   box-sizing: border-box;
   margin-top: 10px;
-  margin-left: 43px;
+  margin-left: 42px;
   padding-top: 10px;
   width: 141px;
   height: 38px;
@@ -1666,6 +1754,10 @@ a.down-dir:active {
   text-align: center;
 
   background-image: url("../img/item-button.svg");
+}
+
+.hammer-drill-item:nth-child(3) .new-price {
+  margin-left: 40px;
 }
 
 .one-price .old-price {
@@ -1696,7 +1788,7 @@ a.down-dir:active {
 
 .header-top {
   display: flex;
-  min-height: 42px;
+  min-height: 40px;
 }
 
 
@@ -1715,9 +1807,9 @@ a.down-dir:active {
 .search input {
   box-sizing: border-box;
   width: 100%;
-  height: 42px;
-  padding-left: 50px;
-  padding-top: 0;
+  height: 40px;
+  padding-left: 48px;
+  padding-top: 5px;
   padding-bottom: 10px;
 
   background-repeat: no-repeat;
@@ -1751,21 +1843,30 @@ a.down-dir:active {
   box-sizing: border-box;
   width: 150px;
   display: block;
-  padding-top: 10px;
+  padding-top: 9px;
+  padding-left: 17px;
 
   text-align: center;
 }
 
-.order-registration a:nth-child(-n+2) {
-  padding-left: 12px;
+.order-registration .basket {
+  padding-left: 19px;
+}
+
+.order-registration .basket-full {
+  padding-left: 22px;
+}
+
+.order-registration a:nth-child(3) {
+  padding-left: 0;
 }
 
 .bookmarks::before {
   content: "";
 
   position: absolute;
-  left: 15px;
-  top: 10px;
+  left: 17px;
+  top: 9px;
 
   width: 14px;
   height: 16px;
@@ -1785,8 +1886,8 @@ a.down-dir:active {
   content: "";
 
   position: absolute;
-  left: 15px;
-  top: 10px;
+  left: 17px;
+  top: 9px;
 
   width: 15px;
   height: 15px;
@@ -1817,10 +1918,15 @@ a.down-dir:active {
 
 .technomart-definition {
   display: block;
-  width: 196px;
+  width: 205px;
   padding: 0;
+  padding-top: 3px;
   margin: 0;
-  margin-left: 53px;
+  margin-left: 52px;
+}
+
+.technomart-definition p {
+  letter-spacing: 0.78px;
 }
 
 .phone {
@@ -1839,8 +1945,8 @@ a.down-dir:active {
   content: "";
 
   position: absolute;
-  left: 12px;
-  top: 12px;
+  left: 11px;
+  top: 11px;
 
   width: 19px;
   height: 19px;
@@ -1867,7 +1973,7 @@ a.down-dir:active {
   display: block;
   width: auto;
   height: 22px;
-  padding: 12px 25px 10px 25px;
+  padding: 12px 25px 10px 23px;
 }
 
 .entrance .enter {
@@ -1881,7 +1987,7 @@ a.down-dir:active {
   content: "";
 
   position: absolute;
-  left: 12px;
+  left: 14px;
   top: 14px;
 
   width: 20px;
@@ -1943,6 +2049,8 @@ a.down-dir:active {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
+  margin-top: 22px;
 }
 
 .popular-manufacturers-item {
@@ -1979,43 +2087,43 @@ a.down-dir:active {
 }
 
 .popular-manufacturers-item .bosch {
-  padding-top: 55px;
-  padding-left: 45px;
+  padding-top: 53px;
+  padding-left: 46px;
 }
 
 .popular-manufacturers-item .makita {
-  padding-top: 53px;
-  padding-left: 45px;
+  padding-top: 50px;
+  padding-left: 47px;
 }
 
 .popular-manufacturers-item .dewalt {
-  padding-top: 52px;
-  padding-left: 35px;
+  padding-top: 48px;
+  padding-left: 36px;
 }
 
 .popular-manufacturers-item .interskol {
-  padding-top: 25px;
-  padding-left: 7px;
+  padding-top: 21px;
+  padding-left: 8px;
 }
 
 .popular-manufacturers-item .hitachi {
-  padding-top: 60px;
-  padding-left: 25px;
+  padding-top: 56px;
+  padding-left: 27px;
 }
 
 .popular-manufacturers-item .lg {
-  padding-top: 35px;
-  padding-left: 45px;
+  padding-top: 33px;
+  padding-left: 47px;
 }
 
 .popular-manufacturers-item .aeg {
-  padding-top: 25px;
-  padding-left: 35px;
+  padding-top: 21px;
+  padding-left: 34px;
 }
 
 .popular-manufacturers-item .metabo {
-  padding-top: 35px;
-  padding-left: 10px;
+  padding-top: 32px;
+  padding-left: 9px;
 }
 
 .services {
@@ -2023,7 +2131,7 @@ a.down-dir:active {
 }
 
 .services-wrapper {
-  margin-bottom: 55px;
+  margin-bottom: 53px;
   width: 100%;
   min-height: 550px;
   padding-top: 1px;
@@ -2036,7 +2144,7 @@ a.down-dir:active {
   position: relative;
 
   margin-right: 80px;
-  margin-top: 60px;
+  margin-top: 58px;
   width: 240px;
 }
 
@@ -2058,7 +2166,7 @@ a.down-dir:active {
   box-sizing: border-box;
   min-height: 61px;
   padding-top: 12px;
-  padding-left: 20px;
+  padding-left: 22px;
 }
 
 .services-list-wrapper {
@@ -2078,7 +2186,7 @@ a.down-dir:active {
 }
 
 .services ul:nth-child(2) {
-  margin-top: 55px;
+  margin-top: 53px;
 }
 
 .about-delivery {
@@ -2091,8 +2199,8 @@ a.down-dir:active {
 
   position: absolute;
 
-  margin-left: 375px;
-  margin-top: 10px;
+  margin-left: 371px;
+  margin-top: 8px;
 
   /* display: none; */
 
@@ -2183,7 +2291,7 @@ a.down-dir:active {
   min-height: 10px;
   margin: 0;
   margin-bottom: 22px;
-  margin-top: 18px;
+  margin-top: 17px;
   padding: 0;
 }
 
@@ -2203,12 +2311,20 @@ a.down-dir:active {
   margin-left: -15px;
 }
 
+.breadcrumbs li:nth-child(2) {
+  margin-left: 0px;
+}
+
+.breadcrumbs li:nth-child(3) {
+  margin-left: -5px;
+}
+
 .breadcrumbs li:not(:first-child)::before {
   content: "";
 
   position: absolute;
   top: 3px;
-  left: -20px;
+  left: -24px;
 
   width: 8px;
   height: 12px;
@@ -2250,7 +2366,7 @@ a.down-dir:active {
   width: 220px;
   min-height: 35px;
   padding-left: 18px;
-  padding-top: 10px;
+  padding-top: 7px;
   padding-bottom: 10px;
   margin: 0;
 
@@ -2273,17 +2389,18 @@ a.down-dir:active {
   position: relative;
 
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 23px;
   width: 218px;
   min-height: 318px;
 }
 
-.hammer-drill-item:hover {
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
-}
-
 .hammer-drill-item:nth-child(3n) {
   margin-right: 0;
+}
+
+
+.hammer-drill-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .sort-list {
@@ -2306,13 +2423,17 @@ a.down-dir:active {
 }
 
 .sort-list {
-  margin-top: 8px;
-  margin-left: 40px;
+  margin-top: 7px;
+  margin-left: 38px;
 }
 
-.sort-list li:nth-child(2),
-.sort-list li:nth-child(3) {
+
+.sort-list li:nth-child(2) {
   margin-left: 70px;
+}
+
+.sort-list li:nth-child(3) {
+  margin-left: 66px;
 }
 
 .hammer-drill-item .choice {
@@ -2353,8 +2474,9 @@ a.down-dir:active {
   width: 135px;
   min-height: 38px;
   padding-top: 10px;
-  margin-left: 45px;
-  margin-top: 45px;
+  padding-left: 5px;
+  margin-left: 40px;
+  margin-top: 44px;
 
   font-size: 14px;
   line-height: 18px;
@@ -2399,9 +2521,10 @@ a.down-dir:active {
   box-sizing: border-box;
   width: 135px;
   min-height: 38px;
-  padding-top: 10px;
-  margin-left: 45px;
-  margin-top: 5px;
+  padding-top: 8px;
+  padding-left: 5px;
+  margin-left: 40px;
+  margin-top: 8px;
 
   font-size: 14px;
   line-height: 18px;
@@ -2440,7 +2563,7 @@ a.down-dir:active {
 }
 
 .pagination {
-  margin-top: 30px;
+  margin-top: 32px;
   margin-bottom: 40px;
   min-height: 38px;
 }
@@ -2473,7 +2596,7 @@ a.down-dir:active {
 
 .about-hammer-drill-wrapper {
   width: 100%;
-  min-height: 220px;
+  min-height: 222px;
   padding-top: 60px;
 
   background-color: #f4f7f9;
@@ -2506,7 +2629,7 @@ footer {
 }
 
 .footer-top-left {
-  width: 322px;
+  width: 325px;
 }
 
 .logo-back a {
@@ -2525,7 +2648,7 @@ footer {
 
 .footer-top-left p {
   margin: 0;
-  margin-top: -3px;
+  /* margin-top: -3px; */
   margin-left: 2px;
   padding: 0;
 }
@@ -2559,27 +2682,27 @@ footer {
 
   padding: 0;
   width: 135px;
-  margin-right: 110px;
-  margin-left: 8px;
+  margin-right: 115px;
+  margin-left: 5px;
   margin-top: 35px;
 }
 
 .footer-bottom p:first-child {
   margin-left: 0;
-  margin-top: 35px;
+  margin-top: 37px;
   margin-right: 155px;
-  width: 228px;
+  width: 230px;
 }
 
 .footer-bottom p:last-child {
-  margin-top: 35px;
+  margin-top: 37px;
   margin-right: 10px;
-  margin-left: 60px;
+  margin-left: 54px;
   width: 96px;
 }
 
 .footer-bottom p:nth-child(3) {
-  margin-top: 35px;
+  margin-top: 37px;
   padding: 0;
   width: 135px;
 }
@@ -2610,7 +2733,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-back {
-   top: 120px;
+   top: 50px;
    left: 50%;
 
    display: none;
@@ -2730,7 +2853,7 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-  top: 120px;
+  top: 50px;
   left: 50%;
 
   display: none;
@@ -2745,7 +2868,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-back {
-  top: 120px;
+  top: 50px;
   left: 50%;
 
   display: none;
@@ -2826,4 +2949,8 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   border: none;
   outline: none;
+}
+
+.modal-show {
+  display: block;
 }
