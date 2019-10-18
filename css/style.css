@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -611,13 +619,13 @@ a.registration:active {
 .discount h3,
 .delivery h3 {
   margin: 0;
-  margin-left: 22px;
-  margin-top: 21px;
+  padding-left: 22px;
+  padding-top: 21px;
 }
 
 .technics h3 {
-  margin-left: 23px;
-  margin-top: 21px;
+  padding-left: 23px;
+  padding-top: 21px;
 }
 
 .materials a,
@@ -721,6 +729,7 @@ a.registration:active {
   margin-top: 28px;
 
   font-size: 30px;
+  font-weight: 300;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
@@ -776,6 +785,7 @@ a.registration:active {
 
 .popular-manufacturers h2 {
   font-size: 30px;
+  font-weight: 300;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
@@ -806,6 +816,7 @@ a.all-manufacturers:active {
 .services h2,
 .services h3 {
   font-size: 30px;
+  font-weight: 300;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
@@ -814,6 +825,7 @@ a.all-manufacturers:active {
 .services p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
+  font-weight: 500;
   line-height: 24px;
   color: #000000;
 }
@@ -853,6 +865,7 @@ a.all-manufacturers:active {
   margin: 0;
 
   font-size: 30px;
+  font-weight: 300;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
@@ -861,17 +874,18 @@ a.all-manufacturers:active {
 .about-company p {
   margin: 0;
   margin-top: 25px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
+  font-weight: normal;
   line-height: 24px;
   color: #000000;
-  letter-spacing: 0.1px;
 }
 
 .about-company a {
   display: inline-block;
   padding: 8px 40px;
-  margin-top: 37px;
+  margin-top: 38px;
 
   font-size: 14px;
   line-height:18px;
@@ -956,7 +970,9 @@ a.all-manufacturers:active {
 
 .contacts h2 {
   margin: 0;
+
   font-size: 30px;
+  font-weight: 300;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
@@ -1017,6 +1033,7 @@ a.all-manufacturers:active {
 
 .footer-navigation-top {
   margin: 0;
+  margin-top: 1px;
   margin-left: 3px;
   padding: 0;
   width: 550px;
@@ -1061,7 +1078,7 @@ a.all-manufacturers:active {
 
 .footer-navigation-bottom {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 33px;
   margin-left: 25px;
   padding: 0;
   width: 525px;
@@ -1246,13 +1263,21 @@ a.all-manufacturers:active {
 }
 
 .hammer-drills {
+  box-sizing: border-box;
+  width: 940px;
+  height: 89px;
+  padding-top: 28px;
+  padding-left: 28px;
   margin: 0;
   margin-bottom: 20px;
 
   font-size: 30px;
+  font-weight: 300;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
+
+  background-color: #f2f6f8;
 }
 
 .sort {
@@ -1406,6 +1431,7 @@ a.down-dir:active {
 
 .about-hammer-drill h2 {
   font-size: 30px;
+  font-weight: 300;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
@@ -1681,6 +1707,9 @@ a.down-dir:active {
 }
 
 .filter legend {
+  padding: 0;
+  margin-left: -2px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30px;
@@ -1933,10 +1962,6 @@ a.down-dir:active {
   margin-left: 52px;
 }
 
-.technomart-definition p {
-  letter-spacing: 0.78px;
-}
-
 .phone {
   position: relative;
 
@@ -1972,6 +1997,7 @@ a.down-dir:active {
 
 .entrance {
   display: flex;
+  align-items: flex-start;
 
   margin-left: 67px;
   padding-top: 15px;
@@ -1980,7 +2006,6 @@ a.down-dir:active {
 .entrance a {
   display: block;
   width: auto;
-  height: 22px;
   padding: 13px 25px 10px 23px;
 }
 
@@ -2190,6 +2215,7 @@ a.down-dir:active {
   margin-bottom: 25px;
 
   font-size: 36px;
+  font-weight: 500;
   line-height: 36px;
 }
 
@@ -2199,18 +2225,15 @@ a.down-dir:active {
 
 .about-delivery {
   position: relative;
-  /* display: none; */
+  display: none;
 }
 
-.service-delivery::after {
+.about-delivery::after {
   content: "";
 
   position: absolute;
-
-  margin-left: 371px;
-  margin-top: 8px;
-
-  /* display: none; */
+  top: 27px;
+  left: 151px;
 
   width: 468px;
   height: 261px;
@@ -2223,15 +2246,12 @@ a.down-dir:active {
   display: none;
 }
 
-.service-garanty::after {
+.about-garanty::after {
   content: "";
 
   position: absolute;
-
-  margin-left: 450px;
-  margin-top: -70px;
-
-  display: none;
+  top: 5px;
+  left: 230px;
 
   width: 389px;
   height: 283px;
@@ -2270,15 +2290,12 @@ a.down-dir:active {
   background-color: #ba2732;
 }
 
-.service-credit::after {
+.about-credit::after {
   content: "";
 
   position: absolute;
-
-  margin-left: 410px;
-  margin-top: -130px;
-
-  display: none;
+  top: 5px;
+  left: 170px;
 
   width: 465px;
   height: 285px;
@@ -2351,16 +2368,6 @@ a.down-dir:active {
   height: 12px;
 
   background-image: url("../img/icon-home.svg");
-}
-
-.hammer-drills {
-  box-sizing: border-box;
-  width: 940px;
-  height: 89px;
-  padding-top: 28px;
-  padding-left: 28px;
-
-  background-color: #f2f6f8;
 }
 
 .filters {
@@ -2464,7 +2471,7 @@ a.down-dir:active {
 
   position: absolute;
   right: 0px;
-  z-index: 10;
+  z-index: 2;
 
   width: 60px;
   height: 60px;
@@ -2692,7 +2699,7 @@ footer {
   width: 135px;
   margin-right: 115px;
   margin-left: 5px;
-  margin-top: 35px;
+  margin-top: 36px;
 }
 
 .footer-bottom p:first-child {
@@ -2961,4 +2968,10 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
   display: block;
+}
+
+.modal-back,
+.map,
+.form-back {
+  z-index: 3;
 }
