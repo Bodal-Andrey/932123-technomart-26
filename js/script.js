@@ -137,8 +137,15 @@ if (document.querySelector(".index-page")) {
 
   var aboutCredit = document.querySelector(".about-credit");
 
+  aboutDelivery.classList.add("modal-show");
+
+  serviceDelivery.classList.add("service-focus");
+
   serviceDelivery.addEventListener("click", function (evt) {
     evt.preventDefault();
+    serviceDelivery.classList.add("service-focus");
+    serviceCredit.classList.remove("service-focus");
+    serviceGaranty.classList.remove("service-focus");
     aboutDelivery.classList.add("modal-show");
     aboutCredit.classList.remove("modal-show");
     aboutGaranty.classList.remove("modal-show");
@@ -146,6 +153,9 @@ if (document.querySelector(".index-page")) {
 
   serviceGaranty.addEventListener("click", function (evt) {
     evt.preventDefault();
+    serviceGaranty.classList.add("service-focus");
+    serviceDelivery.classList.remove("service-focus");
+    serviceCredit.classList.remove("service-focus");
     aboutGaranty.classList.add("modal-show");
     aboutDelivery.classList.remove("modal-show");
     aboutCredit.classList.remove("modal-show");
@@ -153,8 +163,37 @@ if (document.querySelector(".index-page")) {
 
 serviceCredit.addEventListener("click", function (evt) {
   evt.preventDefault();
+  serviceCredit.classList.add("service-focus");
+  serviceDelivery.classList.remove("service-focus");
+  serviceGaranty.classList.remove("service-focus");
   aboutCredit.classList.add("modal-show");
   aboutDelivery.classList.remove("modal-show");
   aboutGaranty.classList.remove("modal-show");
+  });
+}
+
+if (document.querySelector(".index-page")) {
+
+  var drills = document.querySelector(".drills");
+
+  var perforators = document.querySelector(".perforators");
+
+  var backward = document.querySelector(".backward");
+
+  var forward = document.querySelector(".forward");
+
+  drills.classList.add("modal-show");
+
+
+forward.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  drills.classList.add("modal-show");
+  perforators.classList.remove("modal-show");
+  });
+
+backward.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  perforators.classList.add("modal-show");
+  drills.classList.remove("modal-show");
   });
 }
