@@ -24,8 +24,9 @@ a {
 }
 
 header {
-  background-color: #f4f7f9;
   padding: 0;
+
+  background-color: #f4f7f9;
 }
 
 .header-top {
@@ -75,15 +76,12 @@ header {
   display: block;
   width: 220px;
   height: 45px;
+  padding-top: 10px;
 
   text-align: center;
 
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
-}
-
-.logo img {
-  margin-top: 10px;
 }
 
 .logo a:hover {
@@ -98,10 +96,6 @@ header {
   background-color: #63a63e;
 }
 
-.header-top {
-  height: 40px;
-}
-
 .technomart-definition {
   vertical-align: middle;
   font-size: 16px;
@@ -111,10 +105,8 @@ header {
 }
 
 .address a {
-  box-sizing: border-box;
   display: block;
-
-  margin-top: 15px;
+  /* margin-top: 15px; */
   min-height: 15px;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -128,12 +120,13 @@ header {
 }
 
 .address p {
-  font-size: 14px;
-  line-height: 24px;
-  color: #32425c;
   margin: 0;
   margin-top: 7px;
   margin-left: 8px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
   }
 
 a.enter {
@@ -178,7 +171,6 @@ a.registration:active {
 }
 
 .header-navigation li {
-  box-sizing: border-box;
   text-align: center;
 }
 
@@ -234,17 +226,30 @@ a.registration:active {
 .assortment ul,
 .popular-goods ul,
 .popular-manufacturers ul,
-.services ul {
+.services ul,
+.footer-navigation ul,
+.footer-bottom ul,
+.personal ul,
+.breadcrumbs,
+.product-selection ul,
+.sort ul,
+.catalog-hammer-drill ul,
+.pagination ul  {
   list-style: none;
 }
 
-
-.materials {
+.materials,
+.instrument,
+.technics,
+.discount,
+.delivery {
   position: relative;
 
   width: 300px;
-  height: 123px;
+  min-height: 123px;
+}
 
+.materials {
   background-color: #f6b22d;
 }
 
@@ -256,11 +261,6 @@ a.registration:active {
 }
 
 .instrument {
-  position: relative;
-
-  width: 300px;
-  height: 123px;
-
   background-color: #3bbce3;
 }
 
@@ -272,11 +272,6 @@ a.registration:active {
 }
 
 .technics {
-  position: relative;
-
-  width: 300px;
-  height: 123px;
-
   background-color: #dc91d8;
 }
 
@@ -288,11 +283,6 @@ a.registration:active {
 }
 
 .discount {
-  position: relative;
-
-  width: 300px;
-  height: 123px;
-
   background-color: #8ed78f;
 }
 
@@ -304,11 +294,6 @@ a.registration:active {
 }
 
 .delivery {
-  position: relative;
-
-  width: 300px;
-  height: 123px;
-
   background-color: #ffc047;
 }
 
@@ -321,12 +306,13 @@ a.registration:active {
 
 .drills {
   position: relative;
-  /* display: none; */
 
+  display: none;
   width: 620px;
   height: 266px;
   padding: 0;
-  margin-top: -21px;
+  padding-left: 25px;
+  padding-top: 24px;
 
   background-image: url("../img/slider-image.jpg");
 }
@@ -352,8 +338,8 @@ a.registration:active {
   bottom: 35px;
   left: 315px;
 
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
 
   background-color: #ee3643;
   border: 2px solid #ffffff;
@@ -362,11 +348,11 @@ a.registration:active {
 
 .perforators {
   display: none;
-
   width: 620px;
   height: 266px;
   padding: 0;
-  margin-top: -21px;
+  padding-top: 24px;
+  padding-left: 24px;
 
   background-image: url("../img/slide-image.jpg");
 }
@@ -378,8 +364,8 @@ a.registration:active {
   bottom: 35px;
   left: 295px;
 
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
 
   background-color: #ee3643;
   border: 2px solid #ffffff;
@@ -403,9 +389,6 @@ a.registration:active {
 .drills h3,
 .perforators h3 {
   margin: 0;
-  margin-left: 25px;
-  margin-top: 21px;
-  padding-top: 23px;
 
   font-size: 36px;
   line-height: 36px;
@@ -417,7 +400,6 @@ a.registration:active {
 .drills span,
 .perforators span {
   display: block;
-  margin-left: 25px;
   margin-top: 2px;
 
   font-size: 18px;
@@ -428,14 +410,12 @@ a.registration:active {
 .drills a,
 .perforators a {
   display: block;
-  box-sizing: border-box;
   width: 195px;
   height: 38px;
   padding-top: 11px;
   padding-left: 5px;
   margin-top: 121px;
-  margin-left: 25px;
-
+  margin-left: 0;
 
   font-size: 14px;
   line-height: 18px;
@@ -468,6 +448,7 @@ a.registration:active {
   background-image: url("../img/icon-left.svg");
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 .forward {
@@ -481,6 +462,7 @@ a.registration:active {
   background-image: url("../img/icon-right.svg");
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 .materials a {
@@ -577,11 +559,8 @@ a.registration:active {
 .goods-and-services li {
   margin-right: 20px;
   margin-bottom: 20px;
-  padding: 0;
-}
-
-.goods-and-services li:nth-child(4) {
-  position: relative;
+  padding-left: 22px;
+  padding-top: 21px;
 }
 
 .amenities {
@@ -605,7 +584,9 @@ a.registration:active {
 }
 
 .goods-and-services li:nth-child(n+4) {
+  position: relative;
   margin-bottom: 0;
+  padding: 0;
 }
 
 .assortment.container {
@@ -619,13 +600,7 @@ a.registration:active {
 .discount h3,
 .delivery h3 {
   margin: 0;
-  padding-left: 22px;
-  padding-top: 21px;
-}
 
-.technics h3 {
-  padding-left: 23px;
-  padding-top: 21px;
 }
 
 .materials a,
@@ -634,11 +609,9 @@ a.registration:active {
 .discount a,
 .delivery a {
   display: block;
-  box-sizing: border-box;
-
   width: 135px;
   height: 38px;
-  margin-left: 25px;
+  margin-left: 1px;
   margin-top: 12px;
   text-align: center;
   padding-top: 11px;
@@ -646,17 +619,16 @@ a.registration:active {
   border-radius: 3px;
 }
 
-.technics a,
-.discount a,
-.delivery a {
-  margin-left: 23px;
+.materials a,
+.instrument a {
+  margin-left: 3px;
 }
 
 .materials::after {
   content: "";
 
   position: absolute;
-  top: 31px;
+  top: 32px;
   right: 43px;
 
   width: 44px;
@@ -669,7 +641,7 @@ a.registration:active {
   content: "";
 
   position: absolute;
-  top: 33px;
+  top: 34px;
   right: 28px;
 
   width: 75px;
@@ -682,7 +654,7 @@ a.registration:active {
   content: "";
 
   position: absolute;
-  top: 31px;
+  top: 32px;
   right: 31px;
 
   width: 78px;
@@ -695,8 +667,8 @@ a.registration:active {
   content: "";
 
   position: absolute;
-  top: 26px;
-  right: 46px;
+  top: 27px;
+  right: 45px;
 
   width: 59px;
   height: 72px;
@@ -708,7 +680,7 @@ a.registration:active {
   content: "";
 
   position: absolute;
-  top: 32px;
+  top: 33px;
   right: 31px;
 
   width: 78px;
@@ -725,8 +697,7 @@ a.registration:active {
 }
 
 .popular-goods h2 {
-  margin-left: 28px;
-  margin-top: 28px;
+  margin-top: 5px;
 
   font-size: 30px;
   font-weight: 300;
@@ -736,9 +707,6 @@ a.registration:active {
 }
 
 .all-popular-goods {
-  box-sizing: border-box;
-  margin-top: 23px;
-  margin-right: 24px;
   width: 253px;
   height: 38px;
   padding-top: 11px;
@@ -764,26 +732,18 @@ a.registration:active {
 .popular-manufacturers-subject {
   display: flex;
   justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 28px;
+  padding-right: 24px;
+  min-height: 89px;
 
   background-color: #f9f5f0;
 }
 
 .popular-manufacturers-subject h2 {
-  padding-top: 5px;
-  padding-left: 28px;
-}
+  margin: 0;
+  margin-top: 5px;
 
-.popular-manufacturers-subject a {
-  box-sizing: border-box;
-  padding-top: 10px;
-
-  text-align: center;
-
-  border-radius: 3px;
-}
-
-
-.popular-manufacturers h2 {
   font-size: 30px;
   font-weight: 300;
   line-height: 30px;
@@ -791,9 +751,15 @@ a.registration:active {
   color: #32425c;
 }
 
+.popular-manufacturers-subject a {
+  padding-top: 10px;
+
+  text-align: center;
+
+  border-radius: 3px;
+}
+
 a.all-manufacturers {
-  margin-top: 24px;
-  margin-right: 24px;
   width: 253px;
   height: 38px;
 
@@ -815,6 +781,9 @@ a.all-manufacturers:active {
 
 .services h2,
 .services h3 {
+  margin: 0;
+  margin-left: 1px;
+
   font-size: 30px;
   font-weight: 300;
   line-height: 30px;
@@ -823,6 +792,9 @@ a.all-manufacturers:active {
 }
 
 .services p {
+  margin: 0;
+  margin-top: 26px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 500;
@@ -857,6 +829,13 @@ a.all-manufacturers:active {
   outline: none;
 }
 
+.service-focus {
+  color: #32425c;
+
+  background-color: #ffffff;
+  outline: none;
+}
+
 .about-company {
   width: 519px;
 }
@@ -873,7 +852,7 @@ a.all-manufacturers:active {
 
 .about-company p {
   margin: 0;
-  margin-top: 25px;
+  margin-top: 26px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -884,8 +863,11 @@ a.all-manufacturers:active {
 
 .about-company a {
   display: inline-block;
-  padding: 8px 40px;
-  margin-top: 38px;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 39px;
+  padding-bottom: 8px;
+  margin-top: 36px;
 
   font-size: 14px;
   line-height:18px;
@@ -910,13 +892,14 @@ a.all-manufacturers:active {
 .transportation-list {
   list-style: none;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 19px;
   padding: 0;
   padding-left: 36px;
 }
 
 .transportation-list li {
   position: relative;
+
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -980,7 +963,7 @@ a.all-manufacturers:active {
 
 .contacts p {
   margin: 0;
-  margin-top: 25px;
+  margin-top: 26px;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -989,7 +972,7 @@ a.all-manufacturers:active {
 
 .contacts .min-map {
   display: block;
-  margin-top: 30px;
+  margin-top: 31px;
 
   width: 300px;
   height: 158px;
@@ -997,13 +980,12 @@ a.all-manufacturers:active {
 
 .write-to-us {
   display: block;
-  box-sizing: border-box;
   width: 300px;
   padding-top: 10px;
   padding-left: 63px;
   padding-right: 55px;
   padding-bottom: 8px;
-  margin-top: 41px;
+  margin-top: 40px;
 
   font-size: 14px;
   line-height:18px;
@@ -1033,9 +1015,8 @@ a.all-manufacturers:active {
 
 .footer-navigation-top {
   margin: 0;
-  margin-top: 1px;
-  margin-left: 3px;
   padding: 0;
+  padding-left: 3px;
   width: 550px;
   min-height: 50px;
 }
@@ -1061,16 +1042,12 @@ a.all-manufacturers:active {
   color: #f1f5f7;
 }
 
-.footer-navigation ul {
-  list-style: none;
-}
-
-
 .footer-navigation-top a {
   display: inline-block;
   margin: 0;
-  margin-top: 37px;
-  margin-right: 59px;
+  padding-top: 37px;
+  padding-right: 59px;
+
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
@@ -1078,7 +1055,7 @@ a.all-manufacturers:active {
 
 .footer-navigation-bottom {
   margin: 0;
-  margin-top: 33px;
+  margin-top: 34px;
   margin-left: 25px;
   padding: 0;
   width: 525px;
@@ -1090,6 +1067,7 @@ a.all-manufacturers:active {
   display: inline-block;
   margin: 0;
   margin-right: 60px;
+
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
@@ -1114,13 +1092,10 @@ a.all-manufacturers:active {
 
 .footer-bottom p {
   margin: 0;
+
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-}
-
-.footer-bottom ul {
-  list-style: none;
 }
 
 .feedback,
@@ -1140,15 +1115,6 @@ a.all-manufacturers:active {
   color: #ee3643;
 }
 
-
-.personal ul,
-.breadcrumbs,
-.product-selection ul,
-.sort ul,
-.catalog-hammer-drill ul,
-.pagination ul {
-  list-style: none;
-}
 .personal ul:first-child {
   display: flex;
   justify-content: space-between;
@@ -1176,6 +1142,7 @@ a.all-manufacturers:active {
   display: inline-block;
   margin-top: 12px;
   margin-left: 47px;
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -1263,7 +1230,6 @@ a.all-manufacturers:active {
 }
 
 .hammer-drills {
-  box-sizing: border-box;
   width: 940px;
   height: 89px;
   padding-top: 28px;
@@ -1282,8 +1248,6 @@ a.all-manufacturers:active {
 
 .sort {
   display: flex;
-
-  box-sizing: border-box;
   margin: 0;
   margin-bottom: 0;
   width: 700px;
@@ -1376,10 +1340,9 @@ a.down-dir:active {
 
 .pagination a {
   display: block;
-  box-sizing: border-box;
   width: 38px;
   height: 38px;
-  padding-top: 10px;
+  padding-top: 9px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1430,6 +1393,8 @@ a.down-dir:active {
 }
 
 .about-hammer-drill h2 {
+  margin: 0;
+
   font-size: 30px;
   font-weight: 300;
   line-height: 30px;
@@ -1438,6 +1403,10 @@ a.down-dir:active {
 }
 
 .about-hammer-drill p {
+  margin: 0;
+  margin-top: 26px;
+  margin-bottom: 67px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1445,7 +1414,7 @@ a.down-dir:active {
 }
 
 .filter fieldset {
-  padding-left: 0;
+  padding: 0;
 
   border: none;
 }
@@ -1460,13 +1429,13 @@ a.down-dir:active {
 
 .range-filter {
   width: 220px;
+  padding-top: 14px;
 }
 
 .range-controls {
   position: relative;
 
-  height: 41px;
-  margin-top: 14px;
+  height: 80px;
   padding-top: 39px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1502,7 +1471,7 @@ a.down-dir:active {
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+  left: 20px;
 }
 
 .range-controls .toggle-max {
@@ -1515,8 +1484,8 @@ a.down-dir:active {
 
 .price-controls input {
   width: 95px;
-  padding-left: 3px;
-  padding-top: 8px;
+  padding-left: 7px;
+  padding-top: 9px;
   padding-bottom: 10px;
   margin-top: 10px;
 
@@ -1534,17 +1503,19 @@ a.down-dir:active {
 .price-controls .max-price {
   margin-left: 4px;
 }
-
-.max-price input[name="max-price"] {
-  /* margin-left: 5px; */
+.max-price input {
+  margin-left: 5px;
+  margin-top: 5px;
 }
+
 
 .manufacturers {
   position: relative;
+
   width: 220px;
   min-height: 260px;
-  padding: 0;
-  margin-top: 43px;
+  margin-top: 42px;
+  margin-left: 0;
 }
 
 .manufacturers::before {
@@ -1562,6 +1533,7 @@ a.down-dir:active {
 
 .manufacturers ul {
   padding: 0;
+  padding-top: 15px;
   margin: 0;
 }
 
@@ -1575,13 +1547,8 @@ a.down-dir:active {
   text-transform: uppercase;
 }
 
-.manufacturers li:nth-child(1) {
-  margin-top: 15px;
-  }
-
-
 .manufacturers label {
-  padding-left: 32px;
+  padding-left: 34px;
 }
 
 .check-input {
@@ -1626,10 +1593,12 @@ a.down-dir:active {
 
 .power-supply {
   position: relative;
+
   width: 220px;
   min-height: 180px;
   padding: 0;
   margin-top: 5px;
+  margin-left: 0;
 }
 
 .power-supply li {
@@ -1647,7 +1616,7 @@ a.down-dir:active {
   content: "";
 
   position: absolute;
-  top: -16px;
+  top: -20px;
   left: -2px;
 
   width: 220px;
@@ -1655,11 +1624,12 @@ a.down-dir:active {
 
   background-color: #f7f3ec;
 }
+
 .manufacturers::before {
   content: "";
 
   position: absolute;
-  top: -16px;
+  top: -17px;
   left: -2px;
 
   width: 220px;
@@ -1671,11 +1641,12 @@ a.down-dir:active {
 .power-supply ul {
   padding: 0;
   padding-top: 13px;
+  padding-left: 3px;
   margin: 0;
 }
 
 .power-supply label {
-  padding-left: 32px;
+  padding-left: 31px;
 }
 
 .power-supply .check-box {
@@ -1708,7 +1679,6 @@ a.down-dir:active {
 
 .filter legend {
   padding: 0;
-  margin-left: -2px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
@@ -1768,8 +1738,7 @@ a.down-dir:active {
 }
 
 .hammer-drill-item .new-price {
-  box-sizing: border-box;
-  margin-top: 10px;
+  margin-top: 9px;
   margin-left: 42px;
   padding-top: 10px;
   width: 141px;
@@ -1794,7 +1763,7 @@ a.down-dir:active {
 }
 
 .one-price .new-price {
-  margin-top: 40px;
+  margin-top: 39px;
 }
 
 .container {
@@ -1805,7 +1774,6 @@ a.down-dir:active {
 
 .header-top-wrapper {
   width: 100%;
-
   min-height: 25px;
 
   background-color: #293449;
@@ -1817,7 +1785,7 @@ a.down-dir:active {
 
 .header-top {
   display: flex;
-  min-height: 40px;
+  height: 40px;
 }
 
 
@@ -1834,7 +1802,6 @@ a.down-dir:active {
 }
 
 .search input {
-  box-sizing: border-box;
   width: 100%;
   height: 40px;
   padding-left: 48px;
@@ -1869,7 +1836,6 @@ a.down-dir:active {
 .order-registration a {
   position: relative;
 
-  box-sizing: border-box;
   width: 150px;
   display: block;
   padding-top: 9px;
@@ -1941,12 +1907,13 @@ a.down-dir:active {
 
 .header-middle {
   display: flex;
-  /* justify-content: space-between; */
   margin-top: 30px;
+  padding-left: 52px;
 }
 
 .address {
   margin-left: 65px;
+  padding-top: 15px;
 }
 
 .personal {
@@ -1959,7 +1926,7 @@ a.down-dir:active {
   padding: 0;
   padding-top: 3px;
   margin: 0;
-  margin-left: 52px;
+  /* margin-left: 52px; */
 }
 
 .phone {
@@ -2065,6 +2032,9 @@ a.down-dir:active {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  padding-left: 28px;
+  padding-top: 24px;
+  padding-right: 24px;
 }
 
 .popular-goods-list ul {
@@ -2087,8 +2057,8 @@ a.down-dir:active {
 }
 
 .popular-manufacturers-item {
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 22px;
+  margin-bottom: 17px;
   width: 218px;
   min-height: 145px;
 
@@ -2105,7 +2075,6 @@ a.down-dir:active {
 
 .popular-manufacturers-item a {
   display: block;
-  box-sizing: border-box;
   width: 218px;
   min-height: 145px
 }
@@ -2120,22 +2089,22 @@ a.down-dir:active {
 }
 
 .popular-manufacturers-item .bosch {
-  padding-top: 53px;
+  padding-top: 50px;
   padding-left: 46px;
 }
 
 .popular-manufacturers-item .makita {
-  padding-top: 50px;
+  padding-top: 47px;
   padding-left: 47px;
 }
 
 .popular-manufacturers-item .dewalt {
-  padding-top: 48px;
+  padding-top: 45px;
   padding-left: 36px;
 }
 
 .popular-manufacturers-item .interskol {
-  padding-top: 21px;
+  padding-top: 18px;
   padding-left: 8px;
 }
 
@@ -2160,7 +2129,7 @@ a.down-dir:active {
 }
 
 .services {
-  margin-top: 68px;
+  margin-top: 66px;
 }
 
 .services-wrapper {
@@ -2176,8 +2145,8 @@ a.down-dir:active {
 .services-list {
   position: relative;
 
+  margin: 0;
   margin-right: 80px;
-  margin-top: 58px;
   width: 240px;
 }
 
@@ -2196,17 +2165,18 @@ a.down-dir:active {
 }
 
 .services-list li {
-  box-sizing: border-box;
-  min-height: 61px;
-  padding-top: 12px;
+  min-height: 62px;
+  padding-top: 14px;
   padding-left: 22px;
 }
 
 .services-list-wrapper {
   display: flex;
+  padding-top: 69px;
 }
 
 .services-list-wrapper ul {
+  margin: 0;
   padding: 0;
 }
 
@@ -2219,20 +2189,19 @@ a.down-dir:active {
   line-height: 36px;
 }
 
-.services ul:nth-child(2) {
-  margin-top: 53px;
-}
-
 .about-delivery {
   position: relative;
+
   display: none;
+  margin-left: 80px;
+  margin-top: -2px;
 }
 
 .about-delivery::after {
   content: "";
 
   position: absolute;
-  top: 27px;
+  top: 25px;
   left: 151px;
 
   width: 468px;
@@ -2243,6 +2212,7 @@ a.down-dir:active {
 
 .about-garanty {
   position: relative;
+
   display: none;
 }
 
@@ -2261,12 +2231,12 @@ a.down-dir:active {
 
 .about-credit {
   position: relative;
+
   display: none;
 }
 
 .about-credit a {
   display: block;
-  box-sizing: border-box;
   width: 195px;
   min-height: 38px;
   padding-top: 10px;
@@ -2377,7 +2347,6 @@ a.down-dir:active {
 }
 
 .filters h3 {
-  box-sizing: border-box;
   width: 220px;
   min-height: 35px;
   padding-left: 18px;
@@ -2458,6 +2427,8 @@ a.down-dir:active {
 
   width: 218px;
   height: 170px;
+  padding-top: 44px;
+  padding-left: 40px;
 
   background-color: #ffffff;
 }
@@ -2470,7 +2441,8 @@ a.down-dir:active {
   content: "";
 
   position: absolute;
-  right: 0px;
+  top: 1px;
+  right: 0;
   z-index: 2;
 
   width: 60px;
@@ -2485,13 +2457,10 @@ a.down-dir:active {
   position: relative;
 
   display: block;
-  box-sizing: border-box;
   width: 135px;
   min-height: 38px;
   padding-top: 10px;
   padding-left: 5px;
-  margin-left: 40px;
-  margin-top: 44px;
 
   font-size: 14px;
   line-height: 18px;
@@ -2533,12 +2502,10 @@ a.down-dir:active {
 
 .choice .bookmark {
   display: block;
-  box-sizing: border-box;
   width: 135px;
   min-height: 38px;
   padding-top: 8px;
   padding-left: 5px;
-  margin-left: 40px;
   margin-top: 8px;
 
   font-size: 14px;
@@ -2561,7 +2528,6 @@ a.down-dir:active {
 }
 
 .hammer-drill-item h3 {
-  box-sizing: border-box;
   width: 100%;
   min-height: 30px;
   margin: 0;
@@ -2612,9 +2578,11 @@ a.down-dir:active {
 .about-hammer-drill-wrapper {
   width: 100%;
   min-height: 222px;
-  padding-top: 60px;
+  margin-top: 20px;
+  padding-top: 65px;
 
   background-color: #f4f7f9;
+  border-bottom: 1px solid #f4f7f9;
 }
 
 .footer-top-wrapper {
@@ -2649,7 +2617,6 @@ footer {
 
 .logo-back a {
   display: block;
-  box-sizing: border-box;
   padding-top: 20px;
   width: 220px;
   height: 68px;
@@ -2663,7 +2630,6 @@ footer {
 
 .footer-top-left p {
   margin: 0;
-  /* margin-top: -3px; */
   margin-left: 2px;
   padding: 0;
 }
@@ -2694,12 +2660,11 @@ footer {
 
 .social-networks {
   display: flex;
-
   padding: 0;
   width: 135px;
   margin-right: 115px;
   margin-left: 5px;
-  margin-top: 36px;
+  margin-top: 35px;
 }
 
 .footer-bottom p:first-child {
@@ -2753,7 +2718,6 @@ input[type="radio"].visually-hidden {
 
    display: none;
 
-   box-sizing: border-box;
    width: 620px;
    margin-left: -320px;
    padding-left: 80px;
@@ -2827,7 +2791,6 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-item input {
-  box-sizing: border-box;
   width: 100%;
   padding: 10px;
 
@@ -2846,7 +2809,6 @@ input[type="radio"].visually-hidden {
 }
 
 .form-back-submit {
-  box-sizing: border-box;
   width: 620px;
   min-height: 110px;
   background-color: #f4f4f4;;
@@ -2857,7 +2819,6 @@ input[type="radio"].visually-hidden {
 }
 
 .form-back-submit button {
-  box-sizing: border-box;
   width: 460px;
   min-height: 35px;
   padding: 10px 198px;
@@ -2925,13 +2886,13 @@ input[type="radio"].visually-hidden {
   width: 100%;
   min-height: 112px;
   margin-top: 72px;;
+
   background-color: #f1f1f1;
   border-top: 1px solid transparent;
 }
 
 .make-order {
   display: block;
-  box-sizing: border-box;
   width: 220px;
   height: 38px;
   padding-top: 10px;
