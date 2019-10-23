@@ -5,23 +5,37 @@ if (document.querySelector(".index-page")) {
 
   var closeLetter = popupLetter.querySelector(".modal-close");
 
+  var form = popupLetter.querySelector("form");
+
+  var firstName = popupLetter.querySelector("[name = firstname]");
+
+  var email = popupLetter.querySelector("[name = email]");
+
   linkLetter.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popupLetter.classList.add("modal-show");
+    popupLetter.classList.add("modal-show-anime");
+    firstName.focus();
     });
 
   closeLetter.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popupLetter.classList.remove("modal-show");
+    popupLetter.classList.remove("modal-show-anime");
     });
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      if (popupLetter.classList.contains("modal-show")) {
-        popupLetter.classList.remove("modal-show");
+      if (popupLetter.classList.contains("modal-show-anime")) {
+        popupLetter.classList.remove("modal-show-anime");
       }
     }
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!firstName.value || !email.value) {
+    evt.preventDefault();
+    console.log("Нужно ввести имя и e-mail");
+  }
   });
 
   var linkMap = document.querySelector(".min-map");
@@ -32,19 +46,19 @@ if (document.querySelector(".index-page")) {
 
   linkMap.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popupMap.classList.add("modal-show");
+    popupMap.classList.add("modal-show-anime");
     });
 
   closeMap.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popupMap.classList.remove("modal-show");
+    popupMap.classList.remove("modal-show-anime");
     });
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      if (popupMap.classList.contains("modal-show")) {
-        popupMap.classList.remove("modal-show");
+      if (popupMap.classList.contains("modal-show-anime")) {
+        popupMap.classList.remove("modal-show-anime");
       }
     }
   });
@@ -60,27 +74,27 @@ if (document.querySelector(".index-page")) {
   linkBasket.forEach(function(it) {
     it.addEventListener("click", function (evt) {
       evt.preventDefault();
-      popupBasket.classList.add("modal-show");
+      popupBasket.classList.add("modal-show-anime");
       });
   });
 
   cont.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popupBasket.classList.remove("modal-show");
+    popupBasket.classList.remove("modal-show-anime");
     });
 
 
   closeBasket.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popupBasket.classList.remove("modal-show");
+    popupBasket.classList.remove("modal-show-anime");
     });
 
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      if (popupBasket.classList.contains("modal-show")) {
-        popupBasket.classList.remove("modal-show");
+      if (popupBasket.classList.contains("modal-show-anime")) {
+        popupBasket.classList.remove("modal-show-anime");
       }
     }
   });
@@ -99,25 +113,25 @@ if (document.querySelector(".catalog-page")) {
 linkBasket.forEach(function(it) {
   it.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popupBasket.classList.add("modal-show");
+    popupBasket.classList.add("modal-show-anime");
     });
 });
 
   cont.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popupBasket.classList.remove("modal-show");
+    popupBasket.classList.remove("modal-show-anime");
     });
 
   closeBasket.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popupBasket.classList.remove("modal-show");
+    popupBasket.classList.remove("modal-show-anime");
     });
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      if (popupBasket.classList.contains("modal-show")) {
-        popupBasket.classList.remove("modal-show");
+      if (popupBasket.classList.contains("modal-show-anime")) {
+        popupBasket.classList.remove("modal-show-anime");
       }
     }
   });
