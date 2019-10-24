@@ -9,7 +9,6 @@ if (document.querySelector(".index-page")) {
 
   var firstName = popupLetter.querySelector("[name = firstname]");
 
-  var email = popupLetter.querySelector("[name = email]");
 
   linkLetter.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -29,13 +28,6 @@ if (document.querySelector(".index-page")) {
         popupLetter.classList.remove("modal-show-anime");
       }
     }
-  });
-
-  form.addEventListener("submit", function (evt) {
-    if (!firstName.value || !email.value) {
-    evt.preventDefault();
-    console.log("Нужно ввести имя и e-mail");
-  }
   });
 
   var linkMap = document.querySelector(".min-map");
@@ -71,12 +63,12 @@ if (document.querySelector(".index-page")) {
 
   var cont = popupBasket.querySelector(".white-button");
 
-  linkBasket.forEach(function(it) {
-    it.addEventListener("click", function (evt) {
+  for (let i = 0; i < linkBasket.length - 1; i++) {
+    linkBasket[i].addEventListener("click", function (evt) {
       evt.preventDefault();
       popupBasket.classList.add("modal-show-anime");
       });
-  });
+  };
 
   cont.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -110,12 +102,12 @@ if (document.querySelector(".catalog-page")) {
 
   var cont = popupBasket.querySelector(".white-button");
 
-linkBasket.forEach(function(it) {
-  it.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popupBasket.classList.add("modal-show-anime");
-    });
-});
+  for (let i = 0; i < linkBasket.length - 1; i++) {
+    linkBasket[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popupBasket.classList.add("modal-show-anime");
+      });
+  };
 
   cont.addEventListener("click", function (evt) {
     evt.preventDefault();
