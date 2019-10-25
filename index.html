@@ -74,7 +74,7 @@
           <a href="">Для стройки</a>
         </li>
         <li>
-          <div class="drills">
+          <div class="drills modal-show">
             <h3>Дрели</h3>
             <span>Соседям на радость!</span>
             <a href="catalog.html">Открыть каталог</a>
@@ -213,12 +213,12 @@
         </p>
         <div class="services-list-wrapper">
           <ul class="services-list">
-            <li class="service-delivery" tabindex="1">Доставка</li>
+            <li class="service-delivery service-focus" tabindex="1">Доставка</li>
             <li class="service-garanty" tabindex="1">Гарантия</li>
             <li class="service-credit" tabindex="1">Кредит</li>
           </ul>
           <ul>
-            <li class="about-delivery">
+            <li class="about-delivery modal-show">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно!
@@ -336,14 +336,14 @@
   </footer>
   <section class="modal form-back">
     <h2 class="visually-hidden">Письмо в Техномарт</h2>
-    <form action="#" method="post">
+    <form action="https://echo.htmlacademy.ru" method="get">
       <p class="appointment-item">
         <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="firstname" placeholder="Имя Фамилия">
+        <input id="name" type="text" name="firstname" placeholder="Имя Фамилия" required>
       </p>
       <p class="appointment-item">
         <label for="mail">Ваш e-mail:</label>
-        <input id="mail" type="email" name="email" placeholder="email@example.com">
+        <input id="mail" type="email" name="email" placeholder="email@example.com" required>
       </p>
       <p class="appointment-item">
         <label for="letter">Текст письма:</label>
@@ -374,6 +374,6 @@
       <button class="white-button" type="button">Продолжить покупки</button>
     </div>
   </section>
-  <script src="js/brief-script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
