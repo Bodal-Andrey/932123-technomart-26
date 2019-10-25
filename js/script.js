@@ -15,39 +15,42 @@ if (document.querySelector(".index-page")) {
 
   var storage = "";
 
-  // try {
-  //   storage = localStorage.getItem("firstname");
-  // } catch (err) {
-  //   isStorageSupport = false;
-  // }
+  try {
+    storage = localStorage.getItem("firstname");
+   } catch (err) {
+    isStorageSupport = false;
+  }
 
 
   linkLetter.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupLetter.classList.add("modal-show-anime");
-    // if (storage) {
-    //   firstName.value = storage;
-    //   eMail.focus();
-    // } else {
-    //     firstName.focus();
-    // }
-    });
+    if (storage) {
+     firstName.value = storage;
+     eMail.focus();
+    } else {
+       firstName.focus();
+    }
+  });
 
   closeLetter.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupLetter.classList.remove("modal-show-anime");
+    popupLetter.classList.remove("modal-error");
     });
 
-  // form.addEventListener("submit", function(evt) {
-  //   if (!firstName.value || !eMail.value) {
-  //     evt.preventDefault();
-  //     console.log("Нужно ввести имя и e-mail");
-  //   } else {
-  //     if (isStorageSupport) {
-  //       localStorage.setItem("firstName", firstName.value);
-  //     }
-  //   }
-  // });
+  form.addEventListener("submit", function(evt) {
+   if (!firstName.value || !eMail.value) {
+     evt.preventDefault();
+     popupLetter.classList.remove("modal-error");
+     popupLetter.offsetWidth = popupLetter.offsetWidth;
+     popupLetter.classList.add("modal-error");
+   } else {
+     if (isStorageSupport) {
+       localStorage.setItem("firstName", firstName.value);
+     }
+   }
+  });
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
