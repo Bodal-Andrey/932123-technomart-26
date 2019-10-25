@@ -9,17 +9,45 @@ if (document.querySelector(".index-page")) {
 
   var firstName = popupLetter.querySelector("[name = firstname]");
 
+  var eMail = popupLetter.querySelector("[name = email]");
+
+  var isStorageSupport = true;
+
+  var storage = "";
+
+  // try {
+  //   storage = localStorage.getItem("firstname");
+  // } catch (err) {
+  //   isStorageSupport = false;
+  // }
+
 
   linkLetter.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupLetter.classList.add("modal-show-anime");
-    firstName.focus();
+    // if (storage) {
+    //   firstName.value = storage;
+    //   eMail.focus();
+    // } else {
+    //     firstName.focus();
+    // }
     });
 
   closeLetter.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupLetter.classList.remove("modal-show-anime");
     });
+
+  // form.addEventListener("submit", function(evt) {
+  //   if (!firstName.value || !eMail.value) {
+  //     evt.preventDefault();
+  //     console.log("Нужно ввести имя и e-mail");
+  //   } else {
+  //     if (isStorageSupport) {
+  //       localStorage.setItem("firstName", firstName.value);
+  //     }
+  //   }
+  // });
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
@@ -143,10 +171,6 @@ if (document.querySelector(".index-page")) {
 
   var aboutCredit = document.querySelector(".about-credit");
 
-  aboutDelivery.classList.add("modal-show");
-
-  serviceDelivery.classList.add("service-focus");
-
   serviceDelivery.addEventListener("click", function (evt) {
     evt.preventDefault();
     serviceDelivery.classList.add("service-focus");
@@ -187,9 +211,6 @@ if (document.querySelector(".index-page")) {
   var backward = document.querySelector(".backward");
 
   var forward = document.querySelector(".forward");
-
-  drills.classList.add("modal-show");
-
 
 forward.addEventListener("click", function (evt) {
   evt.preventDefault();
