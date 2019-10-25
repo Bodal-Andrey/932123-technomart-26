@@ -99,7 +99,7 @@ if (document.querySelector(".index-page")) {
       evt.preventDefault();
       popupBasket.classList.add("modal-show-anime");
       });
-  };
+  }
 
   cont.addEventListener("click", function (evt) {
     evt.preventDefault();
